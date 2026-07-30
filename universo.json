@@ -1,0 +1,3502 @@
+[
+ {
+  "id": "SVQ-1",
+  "nombre": "Sevilla 1",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 99.95,
+  "divisa": "€",
+  "fechaFin": "2023-02-28",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -42,
+  "mesesAS": null,
+  "descripcion": "",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0799,
+   "ReentelPro": 0.0799,
+   "SuperReentel": 0.0799
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "GND-1",
+  "nombre": "Gandia 1",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 84.49,
+  "divisa": "€",
+  "fechaFin": "2023-09-13",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -35,
+  "mesesAS": null,
+  "descripcion": "",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0743,
+   "ReentelPro": 0.0743,
+   "SuperReentel": 0.0743
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "GND-2",
+  "nombre": "Gandia 2",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 99.9,
+  "divisa": "€",
+  "fechaFin": "2023-12-31",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -31,
+  "mesesAS": null,
+  "descripcion": "",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0097,
+   "ReentelPro": 0.0097,
+   "SuperReentel": 0.0097
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "GND-3",
+  "nombre": "Gandia 3",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 99.84,
+  "divisa": "€",
+  "fechaFin": "2023-10-19",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -34,
+  "mesesAS": null,
+  "descripcion": "",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0902,
+   "ReentelPro": 0.0902,
+   "SuperReentel": 0.0902
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "GND-4",
+  "nombre": "Gandia 4",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 99.8,
+  "divisa": "€",
+  "fechaFin": "2024-06-07",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -26,
+  "mesesAS": null,
+  "descripcion": "",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.1045,
+   "ReentelPro": 0.1045,
+   "SuperReentel": 0.1045
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "SVQ-2",
+  "nombre": "Sevilla 2",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 99.96,
+  "divisa": "€",
+  "fechaFin": "2023-11-23",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -33,
+  "mesesAS": null,
+  "descripcion": "",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.082,
+   "ReentelPro": 0.082,
+   "SuperReentel": 0.082
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "SVQ-3",
+  "nombre": "Sevilla 3",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 99.92,
+  "divisa": "€",
+  "fechaFin": "2023-12-03",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -32,
+  "mesesAS": null,
+  "descripcion": "",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0778,
+   "ReentelPro": 0.0778,
+   "SuperReentel": 0.0778
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "BUR-1",
+  "nombre": "Burriana 1",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 99.99,
+  "divisa": "€",
+  "fechaFin": "2023-12-23",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -32,
+  "mesesAS": null,
+  "descripcion": "",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0654,
+   "ReentelPro": 0.0654,
+   "SuperReentel": 0.0654
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "SGT-1",
+  "nombre": "Sagunto 1",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 99.99,
+  "divisa": "€",
+  "fechaFin": "2023-12-05",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -32,
+  "mesesAS": null,
+  "descripcion": "",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0227,
+   "ReentelPro": 0.0227,
+   "SuperReentel": 0.0227
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "VLC-1",
+  "nombre": "Valencia 1",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 99.99,
+  "divisa": "€",
+  "fechaFin": "2025-12-16",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -8,
+  "mesesAS": null,
+  "descripcion": "Vivienda en Benimámet, zona residencial con alta demanda de Valencia con todos los servicios cerca. Explotada en alquiler por habitaciones con suministros, WiFi de alta velocidad, agua y limpieza semanal incluidos.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0464,
+   "ReentelPro": 0.0464,
+   "SuperReentel": 0.0464
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "VLC-2",
+  "nombre": "Valencia 2",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 99.96,
+  "divisa": "€",
+  "fechaFin": "2024-10-15",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -22,
+  "mesesAS": null,
+  "descripcion": "Vivienda en Torrente, zona céntrica, ubicada junto a la Universidad Católica de Valencia, por lo que existe una alta demanda de estudiantes. Explotada en alquiler por habitaciones con suministros, WiFi de alta velocidad, agua y limpieza semanal incluidos.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0283,
+   "ReentelPro": 0.0283,
+   "SuperReentel": 0.0283
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "VLC-3",
+  "nombre": "Valencia 3",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 99.98,
+  "divisa": "€",
+  "fechaFin": "2025-12-23",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -8,
+  "mesesAS": null,
+  "descripcion": "Vivienda en Benetúser, ciudad cercana a Valencia y a 10 minutos de la playa. Zona de alta demanda con todos los servicios cerca. Explotada en alquiler por habitaciones con suministros, WiFi de alta velocidad, agua y limpieza semanal incluidos.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0671,
+   "ReentelPro": 0.0671,
+   "SuperReentel": 0.0671
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "SGT-2",
+  "nombre": "Sagunto 2",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 99.92,
+  "divisa": "€",
+  "fechaFin": "2024-10-30",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -21,
+  "mesesAS": null,
+  "descripcion": "Vivienda en el centro de Sagunto, junto al teatro romano, ayuntamiento y centro de salud. Zona con alta demanda de alquiler. Suministros, WiFi y limpieza semanal incluidos.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.036,
+   "ReentelPro": 0.036,
+   "SuperReentel": 0.036
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "SVQ-4",
+  "nombre": "Sevilla 4",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 99.99,
+  "divisa": "€",
+  "fechaFin": "2026-01-21",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -7,
+  "mesesAS": null,
+  "descripcion": "Vivienda junto al Hospital Virgen Macarena, Sevilla. Zona muy demandada por profesionales sanitarios y estudiantes. Explotada en alquiler por habitaciones con suministros, WiFi de alta velocidad, agua y limpieza semanal incluidos.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0582,
+   "ReentelPro": 0.0582,
+   "SuperReentel": 0.0582
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "CDP-1",
+  "nombre": "Castellon 1",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 99.99,
+  "divisa": "€",
+  "fechaFin": "2024-09-30",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -22,
+  "mesesAS": null,
+  "descripcion": "Construcción",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0311,
+   "ReentelPro": 0.0311,
+   "SuperReentel": 0.0311
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "SVQ-5",
+  "nombre": "Sevilla 5",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 99.99,
+  "divisa": "€",
+  "fechaFin": "2025-08-14",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -12,
+  "mesesAS": null,
+  "descripcion": "Vivienda en el barrio de la Macarena, junto al hospital y cerca de la Isla de la Cartuja, Sevilla. Gran demanda de sanitarios y estudiantes. Suministros, WiFi y limpieza semanal incluidos.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0718,
+   "ReentelPro": 0.0718,
+   "SuperReentel": 0.0718
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "SVQ-6",
+  "nombre": "Sevilla 6",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2025-08-14",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -12,
+  "mesesAS": null,
+  "descripcion": "Vivienda en el barrio de la Macarena, junto al hospital y cerca de la Isla de la Cartuja, Sevilla. Gran demanda de sanitarios y estudiantes. Suministros, WiFi y limpieza semanal incluidos.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0579,
+   "ReentelPro": 0.0579,
+   "SuperReentel": 0.0579
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "SGT-3",
+  "nombre": "Sagunto 3",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 99.99,
+  "divisa": "€",
+  "fechaFin": "2023-12-07",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -32,
+  "mesesAS": null,
+  "descripcion": "",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0239,
+   "ReentelPro": 0.0239,
+   "SuperReentel": 0.0239
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "MARINA",
+  "nombre": "Marina",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2023-01-18",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -43,
+  "mesesAS": null,
+  "descripcion": "",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.15,
+   "ReentelPro": 0.15,
+   "SuperReentel": 0.15
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "MLG-1",
+  "nombre": "Malaga 1",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2023-08-30",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -35,
+  "mesesAS": null,
+  "descripcion": "",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0199,
+   "ReentelPro": 0.0199,
+   "SuperReentel": 0.0199
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "VLC-4",
+  "nombre": "Valencia 4",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 99.99,
+  "divisa": "€",
+  "fechaFin": "2026-09-28",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 1,
+  "mesesAS": 1,
+  "descripcion": "Vivienda en Valencia a 12 minutos caminando del centro histórico y muy cerca de la estación Valencia Nord. Hospitales, parques y servicios en el entorno. Suministros, WiFi y limpieza semanal incluidos.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/RNT-VLC-4/docs-es/1657705947806_whitepaper_valencia_4.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.09440771391,
+   "ReentelPro": 0.09440771391,
+   "SuperReentel": 0.09440771391
+  },
+  "plusvalia": {
+   "Reentel": 0.03293643835616439,
+   "ReentelPro": 0.03293643835616439,
+   "SuperReentel": 0.03293643835616439
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "PUZ-1",
+  "nombre": "Puzol 1",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2024-04-24",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -28,
+  "mesesAS": null,
+  "descripcion": "",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.127,
+   "ReentelPro": 0.127,
+   "SuperReentel": 0.127
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "VIL-1",
+  "nombre": "Villarreal 1",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2024-10-30",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -21,
+  "mesesAS": null,
+  "descripcion": "Vivienda a 5 minutos del centro de Villarreal, en el corazón de la industria cerámica. Ciudad con alto potencial de crecimiento. Alquiler por habitaciones en un mercado en expansión.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0197,
+   "ReentelPro": 0.0197,
+   "SuperReentel": 0.0197
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "CLVM-1",
+  "nombre": "Coliving Malaga 1",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 99.99,
+  "divisa": "€",
+  "fechaFin": "2027-01-09",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 5,
+  "mesesAS": 5,
+  "descripcion": "Proyecto modular sostenible en Estepona, diseñado por el arquitecto Fran Silvestre. A 5 minutos de la playa y 20 minutos de Marbella. Terreno valorado en 4 millones de euros como garantía. Proyecto bullet sin rendimientos mensuales; devolución del principal e intereses al final.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/CLVM-1/docs-es/1657724661903_whitepaper_coliving_docx.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.08823079124,
+   "ReentelPro": 0.08823079124,
+   "SuperReentel": 0.08823079124
+  },
+  "plusvalia": {
+   "Reentel": 0.04054794520547944,
+   "ReentelPro": 0.04054794520547944,
+   "SuperReentel": 0.04054794520547944
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "ONDA-1",
+  "nombre": "Onda 1",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.03,
+  "divisa": "€",
+  "fechaFin": "2024-03-12",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -29,
+  "mesesAS": null,
+  "descripcion": "Vehículo de deuda sobre activos distressed (NPL, paquetes de deuda e inmuebles con dificultades) en España y mercados globales. Pagos mensuales desde el mes 6.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0135,
+   "ReentelPro": 0.0135,
+   "SuperReentel": 0.0135
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "TLM-1",
+  "nombre": "Tulum 1",
+  "estado": "CERRADO",
+  "ubicacion": "México",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2025-08-14",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -12,
+  "mesesAS": null,
+  "descripcion": "Inmueble con cenote privado en Tulum. Cuenta con dos plantas totalmente equipadas, privacidad total y vigilancia 24/7. Alquiler vacacional en uno de los destinos turísticos más cotizados del mundo.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": -0.0084,
+   "ReentelPro": -0.0084,
+   "SuperReentel": -0.0084
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "VLC-5",
+  "nombre": "Valencia 5",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2026-03-24",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -5,
+  "mesesAS": null,
+  "descripcion": "Vivienda de 95 m² en L'Hort de Senabre, a 3 km del centro de Valencia. Bien conectada con metro y autobús, cerca de hospitales y universidades. Explotada en alquiler por habitaciones con suministros, WiFi de alta velocidad, agua y limpieza semanal incluidos.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0308,
+   "ReentelPro": 0.0308,
+   "SuperReentel": 0.0308
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "VLC-6",
+  "nombre": "Valencia 6",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2027-02-03",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 6,
+  "mesesAS": 6,
+  "descripcion": "Vivienda de 95 m² en L'Hort de Senabre, a 3 km del centro de Valencia. Junto al metro, la Av. de Giorgeta y el parque central. Explotada en alquiler por habitaciones con suministros, WiFi de alta velocidad, agua y limpieza semanal incluidos.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/VLC-6/docs-es/1669983713974_whitepaper_valencia_6_docx.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.1062485107,
+   "ReentelPro": 0.1062485107,
+   "SuperReentel": 0.1062485107
+  },
+  "plusvalia": {
+   "Reentel": 0.01571671232876709,
+   "ReentelPro": 0.01571671232876709,
+   "SuperReentel": 0.01571671232876709
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "CDP-2",
+  "nombre": "Castellon 2",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2024-09-20",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -23,
+  "mesesAS": null,
+  "descripcion": "Vivienda muy céntrica, junto a la plaza de toros y mercado central de Castellón. Zona de alta demanda de alquiler. Suministros, WiFi y limpieza semanal incluidos.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0157,
+   "ReentelPro": 0.0157,
+   "SuperReentel": 0.0157
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "OND-2",
+  "nombre": "Onda 2",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2023-12-10",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -32,
+  "mesesAS": null,
+  "descripcion": "",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0063,
+   "ReentelPro": 0.0063,
+   "SuperReentel": 0.0063
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "CLVM-2",
+  "nombre": "Coliving Malaga 2",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2029-06-15",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 34,
+  "mesesAS": 34,
+  "descripcion": "Edificio de 210 m² con 11 habitaciones y 10 baños a 10 km del centro de Málaga. Concepto coliving de alta calidad, ideal para estudiantes y trabajadores. Alquiler por habitaciones para maximizar su rentabilidad.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/CLVM-2/docs-es/1674565289339_whitepaper_coliving_malaga_2.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.1020415694,
+   "ReentelPro": 0.1020415694,
+   "SuperReentel": 0.1020415694
+  },
+  "plusvalia": {
+   "Reentel": 0.05704657534246571,
+   "ReentelPro": 0.05704657534246571,
+   "SuperReentel": 0.05704657534246571
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "VLC-7",
+  "nombre": "Valencia 7",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2026-06-23",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -2,
+  "mesesAS": null,
+  "descripcion": "Vivienda en Valencia a 300 metros del metro, cerca del centro histórico y universidades. Ideal para estudiantes y trabajadores. Explotada en alquiler por habitaciones con suministros, WiFi de alta velocidad, agua y limpieza semanal incluidos.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/VLC-7/docs-es/1676987529072_whitepaper_coliving_valencia_7_1.pdf",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0152,
+   "ReentelPro": 0.0152,
+   "SuperReentel": 0.0152
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "GRX-1",
+  "nombre": "Granada 1",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2024-01-18",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -31,
+  "mesesAS": null,
+  "descripcion": "",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0097,
+   "ReentelPro": 0.0097,
+   "SuperReentel": 0.0097
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "TLM-2",
+  "nombre": "Tulum 2",
+  "estado": "CERRADO",
+  "ubicacion": "México",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2025-12-16",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -8,
+  "mesesAS": null,
+  "descripcion": "Propiedad con cenote privado y alberca perimetral en la selva de Tulum. Dos plantas completamente equipadas, privacidad total y vigilancia 24/7. Alquiler vacacional en uno de los destinos turísticos más cotizados del mundo.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.017,
+   "ReentelPro": 0.017,
+   "SuperReentel": 0.017
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "MIA-1",
+  "nombre": "Miami 1",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "USA",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2026-07-31",
+  "fuenteFechaFin": "CA",
+  "mesesRestantes": 0,
+  "mesesAS": 0,
+  "descripcion": "Vivienda completamente reformada en Key Biscayne, a pasos de la playa, tiendas y restaurantes. Cocina abierta, pisos cerámicos, porche acondicionado como sala y parking incluido. Activo llave en mano en una de las zonas más exclusivas de Florida.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/MIA-1/docs-es/1681215697319_whitepaper_miami_1.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.04171475763,
+   "ReentelPro": 0.04171475763,
+   "SuperReentel": 0.04171475763
+  },
+  "plusvalia": {
+   "Reentel": 0.20951999999999998,
+   "ReentelPro": 0.20951999999999998,
+   "SuperReentel": 0.20951999999999998
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "SMA-1",
+  "nombre": "S. Miguel Allende 1",
+  "estado": "CERRADO",
+  "ubicacion": "México",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2025-09-12",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -11,
+  "mesesAS": null,
+  "descripcion": "Vivienda de 42,5 m² con terraza y alberca en San Miguel de Allende, ciudad Patrimonio de la UNESCO. Acabados de alta calidad en un destino turístico con demanda creciente de alojamiento exclusivo.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0237,
+   "ReentelPro": 0.0237,
+   "SuperReentel": 0.0237
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "MLG-2",
+  "nombre": "Malaga 2",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2029-08-04",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 36,
+  "mesesAS": 36,
+  "descripcion": "Vivienda en el corazón de Málaga, cerca de universidades y centros de trabajo. Zona con alta demanda. Alquiler por habitaciones, con suministros, WiFi de alta velocidad, agua y limpieza semanal incluidos.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/MLG-2/docs-es/1727806362412_whitepaper_mlg_2.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.09826325712,
+   "ReentelPro": 0.09826325712,
+   "SuperReentel": 0.09826325712
+  },
+  "plusvalia": {
+   "Reentel": 0.01864876712328767,
+   "ReentelPro": 0.01864876712328767,
+   "SuperReentel": 0.01864876712328767
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "JAX-1",
+  "nombre": "Jacksonville 1",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "USA",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2026-09-02",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 1,
+  "mesesAS": 1,
+  "descripcion": "Vivienda reformada en Jacksonville, próxima al mayor centro logístico de Amazon en Florida y al estadio de los Jaguars (NFL). Zona con alta demanda de alquiler. Suministros, WiFi de alta velocidad, agua y limpieza semanal incluidos.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/JAX-1/docs-es/1688133606751_whitepaper_jax_1_esp.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.08054310413,
+   "ReentelPro": 0.08054310413,
+   "SuperReentel": 0.08054310413
+  },
+  "plusvalia": {
+   "Reentel": 0.04475863013698633,
+   "ReentelPro": 0.04475863013698633,
+   "SuperReentel": 0.04475863013698633
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "JAX-2",
+  "nombre": "Jacksonville 2",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "USA",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2026-09-06",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 1,
+  "mesesAS": 1,
+  "descripcion": "Vivienda completamente reformada en Jacksonville, Florida. Próxima a los principales centros logísticos de la zona. Zona con alta demanda de alquiler. Suministros, WiFi de alta velocidad y limpieza semanal incluidos.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/JAX-2/docs-es/1689027944617_memo_jax_2_docx.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.08972449704,
+   "ReentelPro": 0.08972449704,
+   "SuperReentel": 0.08972449704
+  },
+  "plusvalia": {
+   "Reentel": 0.06727589041095891,
+   "ReentelPro": 0.06727589041095891,
+   "SuperReentel": 0.06727589041095891
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "JAX-3",
+  "nombre": "Jacksonville 3",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "USA",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2026-09-27",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 1,
+  "mesesAS": 1,
+  "descripcion": "Vivienda reformada con garaje propio en Jacksonville. Próxima al centro logístico de Amazon, la escuela Stanton College y la Universidad Edward Waters. Una de las ciudades con mayor crecimiento poblacional de Florida.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/JAX-3/docs-es/1690309781359_memo_jax_3_docx.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.0672710574,
+   "ReentelPro": 0.0672710574,
+   "SuperReentel": 0.0672710574
+  },
+  "plusvalia": {
+   "Reentel": 0.06727287671232873,
+   "ReentelPro": 0.06727287671232873,
+   "SuperReentel": 0.06727287671232873
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "SMA-2",
+  "nombre": "S. Miguel Allende 2",
+  "estado": "CERRADO",
+  "ubicacion": "México",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2025-09-12",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -11,
+  "mesesAS": null,
+  "descripcion": "Casa Gruta es una oportunidad de inversión inmobiliaria exclusiva en San Miguel de Allende, México. Esta propiedad única destaca por su arquitectura de trece lados, una gruta subterránea privada con aguas termales, roof garden y áreas ajardinadas. Un proyecto diseñado para generar atractivos ingresos pasivos.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.013,
+   "ReentelPro": 0.013,
+   "SuperReentel": 0.013
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "MLG-3",
+  "nombre": "Malaga 3",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2028-11-04",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 27,
+  "mesesAS": 27,
+  "descripcion": "Inversión inmobiliaria estratégica en Málaga, España. Este céntrico complejo consta de seis habitaciones diseñadas para el alquiler por habitaciones, optimizando la comodidad y la rentabilidad. Situado en una zona de alta demanda, próxima a universidades y centros de trabajo, ofrece una excelente oportunidad de inversión para generar ingresos pasivos recurrentes.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/MLG-3/docs-es/1727806253748_whitepaper_mlg_3.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.09386687043,
+   "ReentelPro": 0.09386687043,
+   "SuperReentel": 0.09386687043
+  },
+  "plusvalia": {
+   "Reentel": 0.12107178082191783,
+   "ReentelPro": 0.12107178082191783,
+   "SuperReentel": 0.12107178082191783
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "JAX-4",
+  "nombre": "Jacksonville 4",
+  "estado": "CERRADO",
+  "ubicacion": "USA",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2025-06-03",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -14,
+  "mesesAS": null,
+  "descripcion": "Atractiva propuesta de inversión en el mercado residencial de Jacksonville, Florida. Vivienda reformada con espacios verdes y próxima al centro logístico de Amazon, en una de las ciudades con mayor crecimiento poblacional de EE.UU. Alta demanda de alquiler por habitaciones durante todo el año.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "MLG-4",
+  "nombre": "Malaga 4",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2027-11-14",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 15,
+  "mesesAS": 15,
+  "descripcion": "Oportunidad exclusiva de inversión en el dinámico mercado de Málaga. Vivienda con acceso rápido al barrio Soho, epicentro cultural y artístico de la ciudad, muy demandada por nómadas digitales y profesionales remotos.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/MLG-4/docs-es/1727806233966_whitepaper_mlg_4.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.08668043113,
+   "ReentelPro": 0.08668043113,
+   "SuperReentel": 0.08668043113
+  },
+  "plusvalia": {
+   "Reentel": 0.052951780821917815,
+   "ReentelPro": 0.052951780821917815,
+   "SuperReentel": 0.052951780821917815
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "CDP-3",
+  "nombre": "Castellon 3",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2027-12-15",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 16,
+  "mesesAS": 16,
+  "descripcion": "Vivienda muy céntrica junto a la plaza de toros y el mercado central de Castellón. Zona de alta demanda de alquiler por habitaciones. Suministros, WiFi de alta velocidad, agua y limpieza semanal incluidos.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/CDP-3/docs-es/1727806274965_whitepaper_cdp_3.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.0840022988,
+   "ReentelPro": 0.0840022988,
+   "SuperReentel": 0.0840022988
+  },
+  "plusvalia": {
+   "Reentel": 0.04495534246575339,
+   "ReentelPro": 0.04495534246575339,
+   "SuperReentel": 0.04495534246575339
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "JAX-5",
+  "nombre": "Jacksonville 5",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "USA",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2027-12-15",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 16,
+  "mesesAS": 16,
+  "descripcion": "Inversión inmobiliaria premium en Jacksonville, Florida. Vivienda de 132 m² con cochera y patio trasero. Florida ha superado a Nueva York como segundo mercado inmobiliario más valioso de EE.UU. Alta demanda de alquiler por habitaciones.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/JAX-5/docs-es/1697451603157_memo_jax_5_docx.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.08353455738,
+   "ReentelPro": 0.08353455738,
+   "SuperReentel": 0.08353455738
+  },
+  "plusvalia": {
+   "Reentel": 0.04005150684931508,
+   "ReentelPro": 0.04005150684931508,
+   "SuperReentel": 0.04005150684931508
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "OVD-1",
+  "nombre": "Oviedo 1",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2025-12-16",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -8,
+  "mesesAS": null,
+  "descripcion": "Pre-desarrollo en Baja California Sur con desert pool, zona de yoga, gimnasio y club de playa. Más de 8 millones de turistas anuales en la región. Futuro tren del Pacífico previsto para 2028. Rendimientos mensuales a cargo de M2Capital.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0389,
+   "ReentelPro": 0.0389,
+   "SuperReentel": 0.0389
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "RDO-1",
+  "nombre": "Punta Cana 1",
+  "estado": "CERRADO",
+  "ubicacion": "República Dominicana",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2026-04-01",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -4,
+  "mesesAS": null,
+  "descripcion": "Exclusivo proyecto de inversión inmobiliaria vacacional en Punta Cana, República Dominicana. Operado bajo el modelo de explotación turística de alto nivel, este desarrollo aprovecha el constante flujo de viajeros internacionales en uno de los destinos más cotizados del Caribe para generar atractivos ingresos pasivos.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.1269,
+   "ReentelPro": 0.1269,
+   "SuperReentel": 0.1269
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "RDO-2",
+  "nombre": "Punta Cana 2",
+  "estado": "CERRADO",
+  "ubicacion": "República Dominicana",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2026-04-28",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -4,
+  "mesesAS": null,
+  "descripcion": "Apartamento de 89 m² en Larimar City & Resort, primera Smart City del Caribe. Ubicado en el Farallón a 100 m sobre el mar, con vistas panorámicas, playa, golf y cordón ecológico protegido. Rendimientos mensuales a cargo de ClerHp (BMEGrowth). Venta pactada a los 2 años.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.1455,
+   "ReentelPro": 0.1455,
+   "SuperReentel": 0.1455
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "MIA-2",
+  "nombre": "Miami 2",
+  "estado": "EN CONSTRUCCIÓN",
+  "ubicacion": "USA",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2030-01-05",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 41,
+  "mesesAS": 41,
+  "descripcion": "Vivienda vacacional en West Eleventh Residences, Miami. Una de las 659 unidades de lujo con tecnología inteligente PMG, gimnasio, piscina resort, spa, coworking y restaurante de autor. Vistas a la ciudad y la bahía de Biscayne, en el epicentro cultural del distrito 11.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/MIA-2/docs-es/1700491817573_memo_mia_2.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.0747,
+   "ReentelPro": 0.0747,
+   "SuperReentel": 0.0747
+  },
+  "plusvalia": {
+   "Reentel": 0.4642906849315069,
+   "ReentelPro": 0.4642906849315069,
+   "SuperReentel": 0.4642906849315069
+  },
+  "fuenteRentabilidad": "estimada/estimada"
+ },
+ {
+  "id": "MIA-3",
+  "nombre": "Miami 3",
+  "estado": "EN CONSTRUCCIÓN",
+  "ubicacion": "USA",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2030-01-08",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 41,
+  "mesesAS": 41,
+  "descripcion": "Vivienda vacacional en West Eleventh Residences, Miami. Una de las 659 unidades de lujo con tecnología inteligente PMG, gimnasio, piscina resort, spa, coworking y restaurante de autor. Vistas a la ciudad y la bahía de Biscayne, en el epicentro cultural del distrito 11.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/MIA-3/docs-es/1700661693056_memo_mia_3.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.0739,
+   "ReentelPro": 0.0739,
+   "SuperReentel": 0.0739
+  },
+  "plusvalia": {
+   "Reentel": 0.45799506849315075,
+   "ReentelPro": 0.45799506849315075,
+   "SuperReentel": 0.45799506849315075
+  },
+  "fuenteRentabilidad": "estimada/estimada"
+ },
+ {
+  "id": "MLG-5",
+  "nombre": "Malaga 5",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2028-02-13",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 18,
+  "mesesAS": 18,
+  "descripcion": "Proyecto inmobiliario prime en Málaga, enfocado en maximizar los ingresos pasivos. Vivienda de 257 m² compuesta por dos estudios independientes, cada uno con cocina, loft y baño propios. A 15 minutos del centro y las playas, cerca de universidades y ciudad deportiva. Alta demanda de nómadas digitales y profesionales remotos.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/MLG-5/docs-es/1727806188645_whitepaper_mlg_5.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.07319816905,
+   "ReentelPro": 0.07319816905,
+   "SuperReentel": 0.07319816905
+  },
+  "plusvalia": {
+   "Reentel": 0.032143835616438354,
+   "ReentelPro": 0.032143835616438354,
+   "SuperReentel": 0.032143835616438354
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "RDO-3",
+  "nombre": "Punta Cana 3",
+  "estado": "CERRADO",
+  "ubicacion": "República Dominicana",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2026-04-29",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -4,
+  "mesesAS": null,
+  "descripcion": "Apartamento de 88 m² con terraza de 25 m² y parking en Larimar City & Resort. Ubicado en el Farallón a 100 m sobre el mar, con vistas panorámicas, playa, golf y compromiso sostenible. Rendimientos mensuales a cargo de ClerHp (BMEGrowth). Venta pactada a los 2 años.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.1447,
+   "ReentelPro": 0.1447,
+   "SuperReentel": 0.1447
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "MAYA-1",
+  "nombre": "Token Maya",
+  "estado": "CERRADO",
+  "ubicacion": "México",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2025-03-26",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -17,
+  "mesesAS": null,
+  "descripcion": "Desarrollo en Chetumal, sur de la Riviera Maya, con playa exclusiva, embarcadero propio, restaurantes, zona de networking y zona de relax. Conectado por el Tren Maya a Cancún en hora y media y a Tulum. Rendimientos mensuales más plusvalía final a los 5 años.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0439,
+   "ReentelPro": 0.0768,
+   "SuperReentel": 0.1317
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "MLG-6",
+  "nombre": "Malaga 6",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2028-03-16",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 19,
+  "mesesAS": 19,
+  "descripcion": "Vivienda de 88 m² en Bailén-Miraflores, Málaga, elegida segunda mejor ciudad mundial para teletrabajo. Hub de empresas como Google, Globant y Citi. Alta demanda estructural con oferta limitada. Explotada en alquiler por habitaciones.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/MLG-6/docs-es/1727806161125_whitepaper_mlg_6.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.08609273574,
+   "ReentelPro": 0.08609273574,
+   "SuperReentel": 0.08609273574
+  },
+  "plusvalia": {
+   "Reentel": 0.025342465753424637,
+   "ReentelPro": 0.025342465753424637,
+   "SuperReentel": 0.025342465753424637
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "SHL-1",
+  "nombre": "Libeen 1",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos mensuales",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2031-05-11",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 57,
+  "mesesAS": 57,
+  "descripcion": "Proyecto de alquiler con opción a compra junto a Libeen, fintech líder en España. Contratos a largo plazo ya firmados con usuarios. Duración de 7 años. Modelo probado en EE.UU. con empresas como Home Partners of América (vendida a Blackstone por 6B$). Más de 40.000 usuarios en plataforma.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/SHL-1/docs-es/1708362957969_whitepaper_shl_1_docx.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.1040308954,
+   "ReentelPro": 0.1040308954,
+   "SuperReentel": 0.1040308954
+  },
+  "plusvalia": {
+   "Reentel": 0,
+   "ReentelPro": -0.0005479452054795164,
+   "SuperReentel": 0
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "RDO-4",
+  "nombre": "Punta cana 4",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "República Dominicana",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2026-07-31",
+  "fuenteFechaFin": "CA",
+  "mesesRestantes": 0,
+  "mesesAS": 0,
+  "descripcion": "Apartamento de 69 m² con terraza en planta 5 de la Torre 1, Larimar City & Resort, primera Smart City del Caribe (300M$, 25.000 propiedades). Electrodomésticos de acero inoxidable, parking privado, campo de golf y amenidades exclusivas. Rendimientos mensuales a cargo de ClerHp (BMEGrowth). Venta pactada a los 2 años.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/RDO-4/docs-es/1709729557039_memo_rdo_4.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.09437292776,
+   "ReentelPro": 0.09437292776,
+   "SuperReentel": 0.09437292776
+  },
+  "plusvalia": {
+   "Reentel": 0.0242,
+   "ReentelPro": 0.0242,
+   "SuperReentel": 0.0242
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "MAD-1",
+  "nombre": "Madrid 1",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Flipping",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2024-11-22",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -21,
+  "mesesAS": null,
+  "descripcion": "Vivienda de 261 m² con terraza en el centro de Madrid. Operación de flipping a 6 meses de la mano de Unique, con el respaldo del grupo Civitas. Madrid, conocida como la \"Miami europea\" por su atracción de capital internacional. Déficit acumulado de unas 100.000 viviendas nuevas en la última década.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0975,
+   "ReentelPro": 0.1075,
+   "SuperReentel": 0.1375
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "RDO-5",
+  "nombre": "Punta Cana 5",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "República Dominicana",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2026-05-10",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": -3,
+  "mesesAS": null,
+  "descripcion": "Apartamento de 131 m² con terraza de 22 m² en planta 9 de la Torre 1, Larimar City & Resort, primera Smart City del Caribe (300M$, 25.000 propiedades). Vistas al mar, golf y parque privado. Rendimientos desde el primer mes a cargo de ClerHp (BMEGrowth). Venta pactada a los 2 años.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/RDO-5/docs-es/1711112848850_memo_rdo_5.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.09627522078,
+   "ReentelPro": 0.09627522078,
+   "SuperReentel": 0.09627522078
+  },
+  "plusvalia": {
+   "Reentel": 0.03259999999999999,
+   "ReentelPro": 0.03259999999999999,
+   "SuperReentel": 0.03259999999999999
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "VLC-8",
+  "nombre": "Valencia 8",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2025-08-27",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -12,
+  "mesesAS": null,
+  "descripcion": "Apartamento de 35 m² en L'Amistat, Valencia, explotado en alquiler vacacional por PRB en Booking y Airbnb. A 10 minutos de la playa de Malvarrosa, junto al estadio Mestalla, cerca de la Av. Blasco Ibáñez y a 300 metros del metro.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0514,
+   "ReentelPro": 0.0514,
+   "SuperReentel": 0.0514
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "MLG-7",
+  "nombre": "Malaga 7",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2028-08-20",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 24,
+  "mesesAS": 24,
+  "descripcion": "Vivienda de 73 m² en Bailén-Miraflores, Málaga, segunda mejor ciudad mundial para teletrabajo. Hub de empresas como Google, Globant y Citi. Demanda que supera la oferta. Explotada en alquiler por habitaciones.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/MLG-7/docs-es/1727806139788_whitepaper_mlg_7.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.09318731143,
+   "ReentelPro": 0.09318731143,
+   "SuperReentel": 0.09318731143
+  },
+  "plusvalia": {
+   "Reentel": 0.012929315068493152,
+   "ReentelPro": 0.012929315068493152,
+   "SuperReentel": 0.012929315068493152
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "VLC-9",
+  "nombre": "Valencia 9",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2025-08-27",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -12,
+  "mesesAS": null,
+  "descripcion": "Apartamento de 35 m² en L'Amistat, Valencia, explotado en alquiler vacacional por PRB en Booking y Airbnb. A 10 minutos de la playa de Malvarrosa, junto al estadio Mestalla, cerca de la Av. Blasco Ibáñez y a 300 metros del metro.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0512,
+   "ReentelPro": 0.0512,
+   "SuperReentel": 0.0512
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "RDO-6",
+  "nombre": "Punta Cana 6",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "República Dominicana",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2026-10-12",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 2,
+  "mesesAS": 2,
+  "descripcion": "Apartamento de 131 m² con terraza de 22 m² en planta 10 de la Torre 1, Larimar City & Resort, primera Smart City del Caribe (300M$, 25.000 propiedades). Completamente equipado con electrodomésticos de acero inoxidable y aire acondicionado. Golf y parque privado. Rendimientos mensuales a cargo de ClerHp (BMEGrowth). Venta pactada a los 2 años.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/RDO-6/docs-es/1712323404808_memo_rdo_6.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.09484893204,
+   "ReentelPro": 0.09484893204,
+   "SuperReentel": 0.09484893204
+  },
+  "plusvalia": {
+   "Reentel": 0.03259999999999999,
+   "ReentelPro": 0.03259999999999999,
+   "SuperReentel": 0.03259999999999999
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "VLC-10",
+  "nombre": "Valencia 10",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2025-08-27",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -12,
+  "mesesAS": null,
+  "descripcion": "Apartamento de 30 m² en L'Amistat, Valencia, con acceso directo desde la vía pública. Explotado en alquiler vacacional por PRB en Booking y Airbnb. A 300 metros del metro, 10 minutos de la playa de Malvarrosa y junto al estadio Mestalla.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.051,
+   "ReentelPro": 0.051,
+   "SuperReentel": 0.051
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "PAZ-1",
+  "nombre": "La Paz",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "México",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos mensuales",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2029-07-29",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 35,
+  "mesesAS": 36,
+  "descripcion": "Cartera en Yucatán (Lik Nah), Dubái (entorno del Burj Khalifa) y Samaná (Monte Rojo). Lujo, sostenibilidad y mercados en auge. Pagos mensuales más plusvalía final. El proyecto número 100 de Reental.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/PAZ-1/docs-es/1715344174263_memo_paz_1.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.111468191,
+   "ReentelPro": 0.1322043994,
+   "SuperReentel": 0.1721545007
+  },
+  "plusvalia": {
+   "Reentel": 0,
+   "ReentelPro": -0.0003013698630136563,
+   "SuperReentel": 0
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "VLC-11",
+  "nombre": "Valencia 11",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2025-08-27",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -12,
+  "mesesAS": null,
+  "descripcion": "Apartamento de 30 m² en L'Amistat, Valencia, explotado en alquiler vacacional por PRB en Booking y Airbnb. A 10 minutos de la playa de Malvarrosa, junto al estadio Mestalla y a 300 metros del metro. El Ayuntamiento de Valencia no otorgará nuevas licencias turísticas, lo que refuerza el valor del activo.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0504,
+   "ReentelPro": 0.0504,
+   "SuperReentel": 0.0504
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "MLG-8",
+  "nombre": "Málaga 8",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2028-11-15",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 27,
+  "mesesAS": 27,
+  "descripcion": "Vivienda de 73 m² en Bailén-Miraflores, Málaga, segunda mejor ciudad mundial para teletrabajo. Hub de empresas como Google, Globant y Citi. Demanda que supera la oferta. Explotada en alquiler por habitaciones.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/MLG-8/docs-es/1720449989919_whitepaper_mlg_8.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.09192707551,
+   "ReentelPro": 0.09192707551,
+   "SuperReentel": 0.09192707551
+  },
+  "plusvalia": {
+   "Reentel": 0.008922191780821875,
+   "ReentelPro": 0.008922191780821875,
+   "SuperReentel": 0.008922191780821875
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "CDS-1",
+  "nombre": "Costa del Sol 1",
+  "estado": "EN REFORMA",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2026-07-31",
+  "fuenteFechaFin": "CA",
+  "mesesRestantes": 0,
+  "mesesAS": 0,
+  "descripcion": "Proyecto en el corazón de Castellón con un inmueble de 215 m², alquiler por habitaciones, con amplia zona común, cocina totalmente equipada y 4 baños. Cerca de servicios, transporte público, mercado central y la Catedral de Santa María.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/CDS-1/docs-es/1723128685645_memo_cds_1.pdf",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.07,
+   "ReentelPro": 0.08,
+   "SuperReentel": 0.1
+  },
+  "fuenteRentabilidad": "estimada/estimada"
+ },
+ {
+  "id": "SLA-1",
+  "nombre": "Salta 1",
+  "estado": "CERRADO",
+  "ubicacion": "Argentina",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2025-02-03",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -18,
+  "mesesAS": null,
+  "descripcion": "Apartamento en el WA Diamond de Salta, ecosistema de bienestar y productividad con hiperbárica, zona de yoga y gimnasio de última generación. Duración de 12 meses, respaldado por caución bancaria. Desarrollado junto a Grupo MDay, con más de 20 años de experiencia en proyectos sostenibles en América Latina.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.1759,
+   "ReentelPro": 0.1759,
+   "SuperReentel": 0.1759
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "BKL-1",
+  "nombre": "Bacalar 1",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "México",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos mensuales",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2027-12-12",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 16,
+  "mesesAS": 16,
+  "descripcion": "Desarrollo de ecoturismo de lujo en Bacalar con acceso directo a la laguna de 7 colores. Piscina, camastros y zonas de relax. Más de 500 ha como garantía. Impulsado por el futuro Tren Maya que conectará Cancún y Chetumal. Rendimientos mensuales a cargo de M2Capital.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/BKL-1/docs-es/1727439792183_memo_bkl_1.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.1092845161,
+   "ReentelPro": 0.1288258065,
+   "SuperReentel": 0.1586006452
+  },
+  "plusvalia": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "MAD-2",
+  "nombre": "Madrid 2",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Flipping",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2025-08-14",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -12,
+  "mesesAS": null,
+  "descripcion": "Flipping a 6 meses en Cuatro Caminos, Madrid. Zona céntrica y bien conectada, con alta demanda de compradores y arrendatarios. Junto a Investrock, empresa especializada en house flipping.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0464109589,
+   "ReentelPro": 0.0464109589,
+   "SuperReentel": 0.0464109589
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "MRB-1",
+  "nombre": "Marbella 1",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos mensuales",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2026-12-22",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 4,
+  "mesesAS": 4,
+  "descripcion": "Villa de 293 m² en urbanización premium de Marbella. Alquiler con opción de recompra pactada a 24 meses y garantía hipotecaria. Zona con ingresos medios por hogar superiores a 8.000 €/mes. Mercado con un crecimiento del 19,61% en el último año.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/MRB-1/docs-es/1730990246478_memo_mrb_1_docx.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.1030017683,
+   "ReentelPro": 0.1081144082,
+   "SuperReentel": 0.1277579317
+  },
+  "plusvalia": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "SVQ-7",
+  "nombre": "Sevilla 7",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Flipping",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2025-06-30",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -13,
+  "mesesAS": null,
+  "descripcion": "Vivienda de 80 m² en el barrio de Triana, Sevilla. Flipping a 5 meses con reforma integral y mejora de eficiencia energética. Zona con creciente demanda inmobiliaria y alta revalorización post-rehabilitación.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0751,
+   "ReentelPro": 0.0751,
+   "SuperReentel": 0.0751
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "MLG-9",
+  "nombre": "Malaga 9",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Flipping",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2025-05-07",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -15,
+  "mesesAS": null,
+  "descripcion": "Vivienda en Bailén-Miraflores, Málaga. Flipping con reforma integral y mejoras de eficiencia energética. Málaga registra un crecimiento en precios de alquiler del 11,3% en el último año y una revalorización acumulada del 40% desde 2007. No ofrece rendimientos mensuales; los inversores participan en la plusvalía generada tras la venta.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0661,
+   "ReentelPro": 0.0661,
+   "SuperReentel": 0.0661
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "BKL-2",
+  "nombre": "Bacalar 2",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "México",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos mensuales",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2028-03-06",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 19,
+  "mesesAS": 19,
+  "descripcion": "Desarrollo de ecoturismo de lujo en Bacalar con acceso directo a la laguna de 7 colores. Piscina, camastros y zonas de relax. Respaldado por garantía fiduciaria. Impulsado por el futuro Tren Maya. Rendimientos mensuales a cargo de M2Capital.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/BKL-2/docs-es/1734357606935_memo_bkl_2.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.109863038,
+   "ReentelPro": 0.1311493671,
+   "SuperReentel": 0.1614159494
+  },
+  "plusvalia": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "MLG-10",
+  "nombre": "Malaga 10",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Flipping",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2025-07-02",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -13,
+  "mesesAS": null,
+  "descripcion": "Vivienda en Bailén-Miraflores, Málaga. Flipping a 5 meses con reforma integral y diseño contemporáneo. Málaga registra un incremento del 15,5% en el precio de la vivienda en el último año. No ofrece rendimientos mensuales; los inversores participan en la plusvalía generada tras la venta.",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.065,
+   "ReentelPro": 0.065,
+   "SuperReentel": 0.065
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "HOU-1",
+  "nombre": "Houston 1",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "USA",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2030-02-22",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 42,
+  "mesesAS": 42,
+  "descripcion": "Vivienda de 312 m² con dos suites independientes, piscina, jacuzzi y patio en el barrio MacGregor de Houston. Próxima al Texas Medical Center y la Universidad de Rice. Explotada en alquiler vacacional de lujo. Houston registra un crecimiento del 60,1% en valor de propiedades en 5 años.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/HOU-1/docs-es/1735820001910_memo_hou_1.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.03758532787,
+   "ReentelPro": 0.03758532787,
+   "SuperReentel": 0.03758532787
+  },
+  "plusvalia": {
+   "Reentel": 0.1304,
+   "ReentelPro": 0.1304,
+   "SuperReentel": 0.1304
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "MUR-1",
+  "nombre": "Murcia 1",
+  "estado": "NO LANZADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Flipping",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2026-10-21",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 2,
+  "mesesAS": 2,
+  "descripcion": "24 apartamentos con piscina comunitaria y parking en el Puerto de Mazarrón. Modelo de compra, reforma y venta en zona costera con alta demanda turística. Precio de la vivienda con un incremento del 9,5% interanual.",
+  "dossier": "No hay",
+  "whitepaper": "No hay",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.1934,
+   "ReentelPro": 0.2284,
+   "SuperReentel": 0.2804
+  },
+  "fuenteRentabilidad": "estimada/estimada"
+ },
+ {
+  "id": "AZN-1",
+  "nombre": "Arizona 1",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "USA",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2030-03-17",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 43,
+  "mesesAS": 43,
+  "descripcion": "Vivienda de 242 m² con 10 habitaciones en el área metropolitana de Phoenix. Modelo PadSplit de alquiler por habitaciones con contratos independientes. Phoenix registra un incremento del 62,2% en valor de propiedades en los últimos 5 años.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/AZN-1/docs-es/1737732595534_memo_azn_1_docx.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.107372527,
+   "ReentelPro": 0.107372527,
+   "SuperReentel": 0.107372527
+  },
+  "plusvalia": {
+   "Reentel": 0.2463,
+   "ReentelPro": 0.2463,
+   "SuperReentel": 0.2463
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "HOU-2",
+  "nombre": "Houston 2",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "USA",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2030-03-26",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 43,
+  "mesesAS": 43,
+  "descripcion": "Vivienda completamente reformada en Third Ward, Houston. Cada habitación con baño privado. Próxima a la Universidad de Houston y Texas Southern University. Modelo combinado de alquiler y venta con garantía hipotecaria. Houston registra un crecimiento del 60,1% en valor de propiedades en 5 años.",
+  "dossier": "No hay",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/HOU-2/docs-es/1738678687264_memo_hou_2.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.03362431718,
+   "ReentelPro": 0.03362431718,
+   "SuperReentel": 0.03362431718
+  },
+  "plusvalia": {
+   "Reentel": 0.204,
+   "ReentelPro": 0.204,
+   "SuperReentel": 0.204
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "HOU-3",
+  "nombre": "Houston 3",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "USA",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2030-04-10",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 44,
+  "mesesAS": 44,
+  "descripcion": "Exclusivo proyecto residencial unifamiliar en Houston, Texas (EE. UU.). Diseñado para capturar la sólida demanda habitacional local mediante la gestión residencial tradicional, este activo ofrece atractivos rendimientos pasivos.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/HOU-3/docs-es/1739800668011_houston_3_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/HOU-3/docs-es/1739789930889_memo_hou_3_esp.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.01841972727,
+   "ReentelPro": 0.01841972727,
+   "SuperReentel": 0.01841972727
+  },
+  "plusvalia": {
+   "Reentel": 0.19226520547945203,
+   "ReentelPro": 0.1923,
+   "SuperReentel": 0.1923
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "ATL-1",
+  "nombre": "Atlanta 1",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "USA",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2030-05-14",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 45,
+  "mesesAS": 45,
+  "descripcion": "Vivienda de 268 m² renovada en Atlanta, motor económico del sureste de EE.UU. Modelo PadSplit de alquiler por habitaciones con contratos independientes. Alta demanda de jóvenes profesionales y sector tecnológico.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/ATL-1/docs-es/1740493288939_atlanta_1_atl_1_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/ATL-1/docs-es/1740492892665_memo_atl_1.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.03395349754,
+   "ReentelPro": 0.03395349754,
+   "SuperReentel": 0.03395349754
+  },
+  "plusvalia": {
+   "Reentel": 0.1245,
+   "ReentelPro": 0.1245,
+   "SuperReentel": 0.1245
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "BKL-3",
+  "nombre": "Bacalar 3",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "México",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos mensuales",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2028-04-26",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 20,
+  "mesesAS": 20,
+  "descripcion": "Desarrollo de ecoturismo de lujo en Bacalar con acceso directo a la laguna de 7 colores. Piscina, camastros y zonas de relax. Más de 500 ha como garantía. Impulsado por el futuro Tren Maya. Rendimientos mensuales a cargo de M2Capital.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/BKL-3/docs-es/1741345696910_bacalar_3_bkl_3_dossier_comercial_1_compressed.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/BKL-3/docs-es/1741169152397_memo_bkl_3_esp_2.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.1097949057,
+   "ReentelPro": 0.1297528302,
+   "SuperReentel": 0.1596965094
+  },
+  "plusvalia": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "YCT-1",
+  "nombre": "Yucatán 1",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "México",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos mensuales",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2028-05-05",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 21,
+  "mesesAS": 21,
+  "descripcion": "Desarrollo de suelo sostenible cerca de Mérida y la Reserva de la Biosfera de Celestún. Ecoturismo y turismo de lujo en auge. Rendimientos mensuales a cargo de MDOS Capital, con lotes como garantía de inversión.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/YCT-1/docs-es/1742489384951_yucatan_1_yct_1_dossier_comercial_compressed.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/YCT-1/docs-es/1742489384304_memo_yct_1_docx_compressed.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.109525012,
+   "ReentelPro": 0.1294343133,
+   "SuperReentel": 0.1493505542
+  },
+  "plusvalia": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "FMY-1",
+  "nombre": "Fort Myers 1",
+  "estado": "EN CONSTRUCCIÓN",
+  "ubicacion": "USA",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2028-05-22",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 21,
+  "mesesAS": 21,
+  "descripcion": "Complejo multifamiliar clase A de 300 unidades en Fort Myers, Florida, con piscina resort, gimnasio y cargadores eléctricos. Ciudad con un crecimiento poblacional del 40% desde 2010. Obra al 30% en el momento de la inversión. Plusvalía al finalizar los 3 años del proyecto.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/FMY-1/docs-es/1743076265812_fort_myers_1_fmy_1_dossier_comercial_compressed.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/FMY-1/docs-es/1743076262949_esp_ppm_fmy_1_compressed.pdf",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.33,
+   "ReentelPro": 0.39,
+   "SuperReentel": 0.51
+  },
+  "fuenteRentabilidad": "estimada/estimada"
+ },
+ {
+  "id": "BPT-1",
+  "nombre": "Bridgeport 1",
+  "estado": "CERRADO",
+  "ubicacion": "USA",
+  "tipologiaExplotacion": "Flipping",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2026-05-05",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -3,
+  "mesesAS": null,
+  "descripcion": "",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0869,
+   "ReentelPro": 0.1043,
+   "SuperReentel": 0.1304
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "MAD-3",
+  "nombre": "Madrid 3",
+  "estado": "CERRADO",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Flipping",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2026-06-03",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -2,
+  "mesesAS": null,
+  "descripcion": "Proyecto de adquisición, reforma y venta en Alcorcón, área metropolitana de Madrid. 6 viviendas de 92–99 m² con diseño contemporáneo y eficiencia energética. Mercado con más del 30% de revalorización en 5 años.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/MAD-3/docs-es/1745574528391_madrid_3_mad_3_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/MAD-3/docs-es/1745572092820_esp_whitepaper_mad_3.pdf",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.11,
+   "ReentelPro": 0.12,
+   "SuperReentel": 0.15
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "SLA-2",
+  "nombre": "Salta 2",
+  "estado": "CERRADO",
+  "ubicacion": "Argentina",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2026-01-15",
+  "fuenteFechaFin": "BD",
+  "mesesRestantes": -7,
+  "mesesAS": null,
+  "descripcion": "",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0691,
+   "ReentelPro": 0.0785,
+   "SuperReentel": 0.0975
+  },
+  "fuenteRentabilidad": "real/real"
+ },
+ {
+  "id": "YCT-2",
+  "nombre": "Yucatán 2",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "México",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos mensuales",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2028-07-30",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 24,
+  "mesesAS": 24,
+  "descripcion": "Desarrollo eco-chic de 288.000 m² en Tetiz, a 45 minutos de Mérida. Arquitectura orgánica, Casa Club y Museo del Henequén junto a la Reserva de Celestún. Turismo de lujo en auge con crecimientos anuales de hasta el 12%. Préstamo promotor con terrenos como garantía.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/YCT-2/docs-es/1747295590291_yucatan_2_yct_2_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/YCT-2/docs-es/1747040410082_esp_whitepaper_yct_2.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.1101567273,
+   "ReentelPro": 0.1301705455,
+   "SuperReentel": 0.1501909091
+  },
+  "plusvalia": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "GRX-2",
+  "nombre": "Granada 2",
+  "estado": "EN REFORMA",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2026-07-21",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": -1,
+  "mesesAS": null,
+  "descripcion": "30 viviendas de obra nueva a 200 m del mar en Castell de Ferro, Costa Tropical de Granada. Terrazas privadas, zonas ajardinadas y piscina comunitaria. Zona con un incremento del 59% en precio de vivienda en 3 años. Préstamo promotor a 12 meses con el suelo como garantía.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/GRX-2/docs-es/1747990779325_granada_2_grx_2_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/GRX-2/docs-es/1748244655670_esp_whitepaper_grx_2_compressed.pdf",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.102,
+   "ReentelPro": 0.122,
+   "SuperReentel": 0.152
+  },
+  "fuenteRentabilidad": "estimada/estimada"
+ },
+ {
+  "id": "GRX-3",
+  "nombre": "Granada 3",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2029-08-28",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 36,
+  "mesesAS": 36,
+  "descripcion": "Proyecto de compra, reforma, alquiler y venta en el centro de Granada, junto al Parque de las Ciencias y la Alhambra. Mercado con más del 15% de crecimiento interanual en alquiler.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/GRX-3/docs-es/1750680866719_granada_3_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/GRX-3/docs-es/1750680866263_granada_3_whitepaper.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.01085129708,
+   "ReentelPro": 0.01085129708,
+   "SuperReentel": 0.01085129708
+  },
+  "plusvalia": {
+   "Reentel": 0.1439,
+   "ReentelPro": 0.1439,
+   "SuperReentel": 0.1439
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "VLC-12",
+  "nombre": "Valencia 12",
+  "estado": "EN REFORMA",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2026-08-01",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 0,
+  "mesesAS": 0,
+  "descripcion": "Proyecto de reforma y venta en Serra, a 25 km de Valencia. Revalorización del 17,65% en los últimos 3 años impulsada por la escasez de oferta en la periferia valenciana.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/VLC-12/docs-es/1750680407367_valencia_12_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/VLC-12/docs-es/1750680406980_valencia_12_whitepaper.pdf",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.0926,
+   "ReentelPro": 0.1026,
+   "SuperReentel": 0.1226
+  },
+  "fuenteRentabilidad": "estimada/estimada"
+ },
+ {
+  "id": "DXB-1",
+  "nombre": "Dubái 1",
+  "estado": "EN REFORMA",
+  "ubicacion": "Emiratos Árabes",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2027-02-17",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 6,
+  "mesesAS": 6,
+  "descripcion": "Proyecto de compra, reforma y venta en las inmediaciones del Burj Khalifa, el edificio más alto del mundo. Mercado premium con alta liquidez, precio medio de 3.300–4.900 USD/m² y el 85% de población expatriada. Sin rendimientos periódicos; plusvalía íntegra al vencimiento.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/DXB-1/docs-es/1750680064118_dubai_1_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/DXB-1/docs-es/1750680063690_dubai_1_whitepaper.pdf",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.24,
+   "ReentelPro": 0.24,
+   "SuperReentel": 0.24
+  },
+  "fuenteRentabilidad": "estimada/estimada"
+ },
+ {
+  "id": "NPL-1",
+  "nombre": "Naples 1",
+  "estado": "EN REFORMA",
+  "ubicacion": "USA",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2028-09-11",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 25,
+  "mesesAS": 25,
+  "descripcion": "",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/NPL-1/docs-es/1750941392602_naples_1_llc_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/NPL-1/docs-es/1750933409121_naples_1_llc_whitepaper_esp.pdf",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.36,
+   "ReentelPro": 0.45,
+   "SuperReentel": 0.51
+  },
+  "fuenteRentabilidad": "estimada/estimada"
+ },
+ {
+  "id": "DNB-1",
+  "nombre": "Dania Beach 1",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "USA",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos trimestrales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2029-10-16",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 38,
+  "mesesAS": 38,
+  "descripcion": "El activo subyacente original fue sustituido el 15/4/2026 por Austin 1, hotel de 152 habitaciones en el CBD de Austin, Texas, junto al Capitolio. Más de 27 millones de visitantes anuales. Gestionado por TPG Hotels & Resorts. Estrategia value-add con salida institucional estimada en 36 meses.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/DNB-1/docs-es/1776261094411_aus_1_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/DNB-1/docs-es/1776261200531_white_paper_aus_1_esp.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.0629688189,
+   "ReentelPro": 0.0629688189,
+   "SuperReentel": 0.0629688189
+  },
+  "plusvalia": {
+   "Reentel": 0.12,
+   "ReentelPro": 0.24,
+   "SuperReentel": 0.32
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "IDX-1",
+  "nombre": "Index 1",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "Global",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos mensuales",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2029-10-17",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 38,
+  "mesesAS": 38,
+  "descripcion": "Cartera diversificada en España, México, EE.UU. y Argentina. Modelo de compra, reforma y venta de activos seleccionados con pagos mensuales desde septiembre 2025. Proyecto colateralizable con cláusula de amortización anticipada.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/IDX-1/docs-es/1753957104364_esp_dossier_comercial_index_1.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/IDX-1/docs-es/1753957103462_esp_whitepaper_index_1.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.1198995646,
+   "ReentelPro": 0.1198995646,
+   "SuperReentel": 0.1198995646
+  },
+  "plusvalia": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "LVT-1",
+  "nombre": "Levante 1",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos mensuales",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2026-09-26",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 1,
+  "mesesAS": 1,
+  "descripcion": "Financiación de la fase final de 34 viviendas unifamiliares en Godelleta, a 20 minutos de Valencia. Contratos privados firmados con el 20% ya abonado como respaldo. Pagos mensuales con devolución íntegra del capital al vencimiento.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/LVT-1/docs-es/1754922942389_levante_1_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/LVT-1/docs-es/1754922185951_ppm_lvt_1_esp.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.1092869456,
+   "ReentelPro": 0.1241903588,
+   "SuperReentel": 0.1490293097
+  },
+  "plusvalia": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "SAM-1",
+  "nombre": "Samaná 1",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "República Dominicana",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos trimestrales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2028-10-12",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 26,
+  "mesesAS": 26,
+  "descripcion": "Enclave residencial boutique en Monte Rojo, Samaná, con vistas panorámicas a la bahía. Condominios, villas, wellness y coworking con el 80% de áreas verdes. Apreciación inmobiliaria del 15–20% desde 2022. Rendimientos trimestrales más plusvalía final.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/SAM-1/docs-es/1756104695025_dossier_comercial_samana_1_esp.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/SAM-1/docs-es/1756110958120_whitepaper_samana_1_esp.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.08789302326,
+   "ReentelPro": 0.08789302326,
+   "SuperReentel": 0.08789302326
+  },
+  "plusvalia": {
+   "Reentel": 0.15,
+   "ReentelPro": 0.21,
+   "SuperReentel": 0.3
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "SAM-2",
+  "nombre": "Samaná 2",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "República Dominicana",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos trimestrales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2028-10-12",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 26,
+  "mesesAS": 26,
+  "descripcion": "Enclave residencial boutique en Monte Rojo, Samaná, con vistas panorámicas a la bahía. Condominios, villas, wellness y coworking con el 80% de áreas verdes. Apreciación inmobiliaria del 15–20% desde 2022. Rendimientos trimestrales más plusvalía final.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/SAM-2/docs-es/1756400000129_samana_2_sam_2_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/SAM-2/docs-es/1756399997882_ppm_sam_2.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.08557953488,
+   "ReentelPro": 0.08557953488,
+   "SuperReentel": 0.08557953488
+  },
+  "plusvalia": {
+   "Reentel": 0.15,
+   "ReentelPro": 0.21,
+   "SuperReentel": 0.3
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "PRO-100",
+  "nombre": "Proyecto 100",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "Global",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2028-10-15",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 26,
+  "mesesAS": 26,
+  "descripcion": "",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/PRO-100/docs-es/1758289531435_esp_proyecto_100_pro_100_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/PRO-100/docs-es/1758289528513_esp_white_paper_proyecto_100.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.08936611765,
+   "ReentelPro": 0.08936611765,
+   "SuperReentel": 0.08936611765
+  },
+  "plusvalia": {
+   "Reentel": 0.105,
+   "ReentelPro": 0.168,
+   "SuperReentel": 0.282
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "RET-1",
+  "nombre": "Rentas 1",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "Global",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos mensuales",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2028-12-25",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 28,
+  "mesesAS": 28,
+  "descripcion": "Cartera global diversificada en España, México, EE.UU., Rep. Dominicana, EAU y Argentina. Préstamo colateralizable con pagos mensuales de rentas estables y devolución íntegra del capital al vencimiento.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/RET-1/docs-es/1759913045539_rentas_1_ret_1_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/RET-1/docs-es/1759913042418_esp_whitelist_rentas_1.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.1206486486,
+   "ReentelPro": 0.1206486486,
+   "SuperReentel": 0.1206486486
+  },
+  "plusvalia": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "OPO-1",
+  "nombre": "Opportunity 1",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "Global",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2027-08-14",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 12,
+  "mesesAS": 12,
+  "descripcion": "Oportunidad exclusiva de inversión sobre activos distressed en España y mercados globales. Pagos mensuales desde el mes 3. Acceso a operaciones de alta complejidad normalmente reservadas a inversores especializados.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/OPO-1/docs-es/1761305941951_opo_1_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/OPO-1/docs-es/1761222726278_whitepaper_opo_1_esp.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.08077122606,
+   "ReentelPro": 0.08077122606,
+   "SuperReentel": 0.08077122606
+  },
+  "plusvalia": {
+   "Reentel": 0.085,
+   "ReentelPro": 0.115,
+   "SuperReentel": 0.16
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "CMY-1",
+  "nombre": "Costa Maya 1",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "México",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos mensuales",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2029-02-02",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 30,
+  "mesesAS": 30,
+  "descripcion": "Masterplan agro-ecoturístico en Costa Maya, Quintana Roo. Modelo de renta fija con pagos mensuales desde los 45 días del cierre. Préstamo de 1.500.000 USD con colateral inmobiliario.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/CMY-1/docs-es/1762878809348_costa_maya_1_cmy_1_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/CMY-1/docs-es/1762772893001_whitepaper_cmy_1_esp.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.1085156757,
+   "ReentelPro": 0.1183791892,
+   "SuperReentel": 0.1381110811
+  },
+  "plusvalia": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "DXB-2",
+  "nombre": "Dubái 2",
+  "estado": "EN REFORMA",
+  "ubicacion": "Emiratos Árabes",
+  "tipologiaExplotacion": "Flipping",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2027-01-17",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 5,
+  "mesesAS": 5,
+  "descripcion": "Proyecto de compra, reforma y venta en la planta 20 del Burj Khalifa, con vistas al Dubai Fountain y la Ópera. Concepto trophy asset bajo el diseño Livit Collection by Girod. Sin rendimientos periódicos; plusvalía íntegra al vencimiento.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/DXB-2/docs-es/1764232435132_dubai_2_dxb_2_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/DXB-2/docs-es/1764232432237_whitepaper_dbx_2_esp.pdf",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.13,
+   "ReentelPro": 0.15,
+   "SuperReentel": 0.19
+  },
+  "fuenteRentabilidad": "estimada/estimada"
+ },
+ {
+  "id": "ABD-1",
+  "nombre": "Abu Dhabi 1",
+  "estado": "EN REFORMA",
+  "ubicacion": "Emiratos Árabes",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2029-04-10",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 32,
+  "mesesAS": 32,
+  "descripcion": "7 unidades en Yas Island, Abu Dhabi, junto al circuito de F1 y parques temáticos. Alquiler vacacional con licencia turística más plusvalía final. Rentas mensuales más plusvalía a la desinversión.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/ABD-1/docs-es/1765437403388_dossier_comercial_abd_1.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/ABD-1/docs-es/1765437400237_whitepaper_abd_1_esp.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.08,
+   "ReentelPro": 0.08,
+   "SuperReentel": 0.08
+  },
+  "plusvalia": {
+   "Reentel": 0.12,
+   "ReentelPro": 0.165,
+   "SuperReentel": 0.255
+  },
+  "fuenteRentabilidad": "estimada/estimada"
+ },
+ {
+  "id": "MAD-4",
+  "nombre": "Madrid 4",
+  "estado": "EN REFORMA",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Flipping",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2027-01-31",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 6,
+  "mesesAS": 6,
+  "descripcion": "Oportunidad prime de inversión inmobiliaria en Madrid, España. Transformación de local comercial en aproximadamente 70 trasteros urbanos en Chamartín, sector con alta resiliencia y demanda creciente. Flipping a 12 meses sin rendimientos mensuales; plusvalía íntegra al vencimiento.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/MAD-4/docs-es/1765797016349_madrid_4_mad_4_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/MAD-4/docs-es/1765796827260_whitepaper_madrid_4_esp.pdf",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.1,
+   "ReentelPro": 0.12,
+   "SuperReentel": 0.15
+  },
+  "fuenteRentabilidad": "estimada/estimada"
+ },
+ {
+  "id": "CME-1",
+  "nombre": "Costa Mediterránea 1",
+  "estado": "EN REFORMA",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Flipping",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2027-10-05",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 14,
+  "mesesAS": 14,
+  "descripcion": "Oportunidad de inversión enfocada a la reactivación y puesta en valor de un activo residencial existente en Garrucha, Almería. El activo presenta un grado de ejecución avanzado en torno al 50% según el planteamiento operativo, lo que reduce el riesgo de arranque y permite concentrar el capital preparar el proyecto para su monetización en una fase posterior. El proyecto plantea crear un conjunto residencial orientadas a familias y profesionales, así como a estancias temporales. Esta estrategia combina enfoque social y mercado, maximizando la absorción potencial y el valor final del activo.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/CME-1/docs-es/1768229493762_cme_1_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/CME-1/docs-es/1767084071596_cme_1_whitepaper_esp.pdf",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.2381,
+   "ReentelPro": 0.2581,
+   "SuperReentel": 0.2881
+  },
+  "fuenteRentabilidad": "estimada/estimada"
+ },
+ {
+  "id": "RET-2",
+  "nombre": "Rentas 2",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "Global",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos mensuales",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2029-05-11",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 33,
+  "mesesAS": 33,
+  "descripcion": "Cartera global diversificada en España, México, Rep. Dominicana y EAU. Préstamos e instrumentos respaldados por activos inmobiliarios con pagos mensuales desde los 45 días del cierre.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/RET-2/docs-es/1770289006436_dossier_comercial_ret_2.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/RET-2/docs-es/1770289002704_whitepaper_ret_2_esp.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.12000316,
+   "ReentelPro": 0.12000316,
+   "SuperReentel": 0.12000316
+  },
+  "plusvalia": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "SLA-3",
+  "nombre": "Salta 3",
+  "estado": "EN REFORMA",
+  "ubicacion": "Argentina",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2027-01-20",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 5,
+  "mesesAS": 5,
+  "descripcion": "Oportunidad inmobiliaria de inversión en Argentina. Planta corporativa de 1.056 m² en el WAD Center de Salta, en pleno auge de la actividad minera del litio. Préstamo bullet con garantía inmobiliaria específica y devolución única al vencimiento.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/SLA-3/docs-es/1770118044251_sla_3_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/SLA-3/docs-es/1770118041349_sla_3_whitepaper_esp.pdf",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.1083,
+   "ReentelPro": 0.1333,
+   "SuperReentel": 0.1667
+  },
+  "fuenteRentabilidad": "estimada/estimada"
+ },
+ {
+  "id": "GRX-4",
+  "nombre": "Granada 4",
+  "estado": "EN REFORMA",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2027-06-03",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 10,
+  "mesesAS": 10,
+  "descripcion": "Exclusiva propuesta de obra nueva en La Zubia, a los pies de Sierra Nevada con conexión inmediata a Granada. 35 viviendas de 1 y 2 dormitorios en mercado con escasa oferta y demanda creciente de primera residencia. Sin rendimientos mensuales; capital y rendimientos íntegramente al final.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/GRX-4/docs-es/1772109371101_granada_4_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/GRX-4/docs-es/1772109364139_whitepaper_grx_4_espanol.pdf",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.11,
+   "ReentelPro": 0.14,
+   "SuperReentel": 0.17
+  },
+  "fuenteRentabilidad": "estimada/estimada"
+ },
+ {
+  "id": "LVT-2",
+  "nombre": "Levante 2",
+  "estado": "EN REFORMA",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Flipping",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2027-11-28",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 15,
+  "mesesAS": 15,
+  "descripcion": "Oportunidad de inversión en obra nueva residencial en Almenara, Castellón, bien conectado a Valencia. Déficit estructural de más de 19.000 unidades en la región. Modelo de construcción y venta con plusvalía íntegra al vencimiento.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/LVT-2/docs-es/1772859866537_lvt_2_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/LVT-2/docs-es/1772718736817_lvt_2_whitepaper_esp.pdf",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.195,
+   "ReentelPro": 0.24,
+   "SuperReentel": 0.3
+  },
+  "fuenteRentabilidad": "estimada/estimada"
+ },
+ {
+  "id": "SLA-4",
+  "nombre": "Salta 4",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "Argentina",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2027-03-16",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 7,
+  "mesesAS": 7,
+  "descripcion": "Inversión inmobiliaria en Argentina. Planta corporativa de 721 m² en el WAD Center de Salta, en pleno auge de la actividad minera del litio. Préstamo bullet con garantía inmobiliaria específica y devolución única al vencimiento.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/SLA-4/docs-es/1774862672179_dossier_comercial_sla_4.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/SLA-4/docs-es/1774862667469_white_paper_sla_4_esp.pdf",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.1083,
+   "ReentelPro": 0.1333,
+   "SuperReentel": 0.15
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "MAD-5",
+  "nombre": "Madrid 5",
+  "estado": "EN REFORMA",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Flipping",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2027-05-09",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 9,
+  "mesesAS": 9,
+  "descripcion": "Oportunidad prime de inversión inmobiliaria en Madrid Río. Reconversión de 1.531 m² en 8 estudios y entre 200 y 215 trasteros. Zona con metro, parque fluvial y centro comercial. Flipping sin rendimientos mensuales; plusvalía íntegra al vencimiento.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/MAD-5/docs-es/1776944815386_mad_5_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/MAD-5/docs-es/1776944806401_whitepaper_madrid_5_esp.pdf",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.11,
+   "ReentelPro": 0.13,
+   "SuperReentel": 0.16
+  },
+  "fuenteRentabilidad": "estimada/estimada"
+ },
+ {
+  "id": "OPO-2",
+  "nombre": "Opportunity 2",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "Global",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos mensuales + final",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2028-06-20",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 22,
+  "mesesAS": 22,
+  "descripcion": "Oportunidad exclusiva de inversión sobre activos distressed en España y mercados globales. Pagos mensuales desde el mes 3. Acceso a operaciones de alta complejidad normalmente reservadas a inversores especializados.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/OPO-2/docs-es/1777304826816_opo_2_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/OPO-2/docs-es/1778501619089_opo_2_whitepaper_esp.pdf",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.04,
+   "ReentelPro": 0.08,
+   "SuperReentel": 0.14
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "MAD-6",
+  "nombre": "Madrid 6",
+  "estado": "EN REFORMA",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Flipping",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2027-05-17",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 9,
+  "mesesAS": 9,
+  "descripcion": "Oportunidad prime de inversión en el área metropolitana de Madrid. Reconversión de 700 m² en 8 viviendas modernas con gimnasio y coworking en Navalcarnero. Alta demanda de familias y jóvenes frente a los precios tensionados de Madrid capital. Flipping disponible en FIAT y cripto USDT.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/MAD-6/docs-es/1777462983979_madrid_6_mad_6_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/MAD-6/docs-es/1778227232028_mad_6_whitepaper_esp.pdf",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.11,
+   "ReentelPro": 0.13,
+   "SuperReentel": 0.16
+  },
+  "fuenteRentabilidad": "estimada/estimada"
+ },
+ {
+  "id": "SAT-1",
+  "nombre": "San Antonio 1",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "USA",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos trimestrales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2030-07-01",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 47,
+  "mesesAS": 47,
+  "descripcion": "Oportunidad estratégica de inversión en el sector hospitality norteamericano bajo la bandera de una marca de prestigio mundial. Este proyecto se centra en la adquisición y reposicionamiento de un hotel Double Tree by Hilton para maximizar su valor y generar rentas trimestrales estables.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/SAT-1/docs-es/1778832022127_sat_1_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/SAT-1/docs-es/1779104887696_whitepaper_san_antonio_1_esp.pdf",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.28,
+   "ReentelPro": 0.4,
+   "SuperReentel": 0.52
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "NCA-1",
+  "nombre": "Carolina del Norte 1",
+  "estado": "EN CONSTRUCCIÓN",
+  "ubicacion": "USA",
+  "tipologiaExplotacion": "Flipping",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2029-07-17",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 35,
+  "mesesAS": 35,
+  "descripcion": "The Camber es un desarrollo multifamily Class-A de 332 unidades en Morrisville (Raleigh-Durham), en el corazón del Research Triangle, uno de los principales hubs tech y life science de EE.UU. Con ~$97M de inversión, obra iniciada en 2026 y entrega prevista en 2027, el proyecto capta la demanda residencial de profesionales atraídos por Apple, Google o Fujifilm.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/NCA-1/docs-es/1779734129838_nca_1_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/NCA-1/docs-es/1779783840274_nca_1_whitepaper.pdf",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.36,
+   "ReentelPro": 0.45,
+   "SuperReentel": 0.51
+  },
+  "fuenteRentabilidad": "estimada/estimada"
+ },
+ {
+  "id": "CMY-2",
+  "nombre": "Costa Maya 2",
+  "estado": "EN EXPLOTACIÓN",
+  "ubicacion": "México",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos mensuales",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2029-06-16",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 34,
+  "mesesAS": 34,
+  "descripcion": "Masterplan agro-ecoturístico en Costa Maya, Quintana Roo. Modelo de renta fija con pagos mensuales desde los 45 días del cierre. Préstamo de 1.500.000 USD con colateral inmobiliario.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/CMY-2/docs-es/1779733528067_cmy_2_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/CMY-2/docs-es/1779787773620_cmy_2_whitepaper_esp.pdf",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "fuenteRentabilidad": "real/estimada"
+ },
+ {
+  "id": "SAT-2",
+  "nombre": "San Antonio 2",
+  "estado": "EN REFORMA",
+  "ubicacion": "USA",
+  "tipologiaExplotacion": "Compra + alquiler + venta",
+  "tipologiaDividendos": "rendimientos trimestrales + final",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2030-07-01",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 47,
+  "mesesAS": 47,
+  "descripcion": "Oportunidad estratégica de inversión en el sector hospitality norteamericano bajo la bandera de una marca de prestigio mundial. Este proyecto se centra en la adquisición y reposicionamiento de un hotel Double Tree by Hilton para maximizar su valor y generar rentas trimestrales estables.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/SAT-2/docs-es/1780060196856_sat_2_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/SAT-2/docs-es/1780055114507_sat_2_whitepaper_esp.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.07,
+   "ReentelPro": 0.07,
+   "SuperReentel": 0.07
+  },
+  "plusvalia": {
+   "Reentel": 0.28,
+   "ReentelPro": 0.4,
+   "SuperReentel": 0.52
+  },
+  "fuenteRentabilidad": "estimada/estimada"
+ },
+ {
+  "id": "RET-3",
+  "nombre": "Rentas 3",
+  "estado": "FINANCIÁNDOSE",
+  "ubicacion": "Global",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos mensuales",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2029-06-25",
+  "fuenteFechaFin": "F",
+  "mesesRestantes": 34,
+  "mesesAS": 36.03287671,
+  "descripcion": "Rentas 3 (RET-3) es una oportunidad de inversión en una cartera global que combina préstamos y activos inmobiliarios destinados a la construcción, alquiler y venta.\nAlcance global: Inversión diversificada en mercados consolidados por Reental: España, México, Estados Unidos, República Dominicana, Emiratos Árabes Unidos y Argentina.\nRendimiento mensual: Pagos periódicos mensuales (cupón equivalente al 12% medio anual estimado) que comienzan a distribuirse 30 días después de la apertura de la cuenta del proyecto.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/RET-3/docs-es/1781076650098_ret_3_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/RET-3/docs-es/1781059796248_ret_3_whitepaper.pdf",
+  "rentAlquiler": {
+   "Reentel": 0.12,
+   "ReentelPro": 0.12,
+   "SuperReentel": 0.12
+  },
+  "plusvalia": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "fuenteRentabilidad": "estimada/estimada"
+ },
+ {
+  "id": "MIA-4",
+  "nombre": "Miami 4",
+  "estado": "EN REFORMA",
+  "ubicacion": "USA",
+  "tipologiaExplotacion": "Flipping",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2027-07-04",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 11,
+  "mesesAS": 11,
+  "descripcion": "El activo consiste en la adquisición y reposicionamiento de una vivienda unifamiliar ubicada\nen 9870 SW 96th St, Miami, FL 33176, dentro del área residencial de Kendall Ranches /\nKillian Palms Country Club, una de las zonas más consolidadas y demandadas del mercado\nresidencial del sur de Miami para vivienda unifamiliar de alta gama.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/MIA-4/docs-es/1781614913309_mia_4_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/MIA-4/docs-es/1781615021820_mia_4_whitepaper_esp.pdf",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.11,
+   "ReentelPro": 0.13,
+   "SuperReentel": 0.16
+  },
+  "fuenteRentabilidad": "estimada/estimada"
+ },
+ {
+  "id": "VLC-14",
+  "nombre": "Valencia 14",
+  "estado": "EN REFORMA",
+  "ubicacion": "España",
+  "tipologiaExplotacion": "Flipping",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "€",
+  "fechaFin": "2028-01-20",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 17,
+  "mesesAS": 17,
+  "descripcion": "Reental lanza Valencia 14 | VLC-14: Invierte en una promoción de Obra Nueva Premium en la costa del Mediterráneo. Participa en un proyecto inmobiliario de nueva construcción situado en la prestigiosa Avenida Primado Reig, Valencia. El proyecto abarca la demolición del activo actual para desarrollar un edificio residencial de nueva construcción con 98 modernas viviendas.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/VLC-14/docs-es/1782307211806_vlc_14_dossier_comercial.pdf",
+  "whitepaper": "https://d23t4e7dm0xzj0.cloudfront.net/VLC-14/docs-es/1782301723034_vlc_14_whitepaper.pdf",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.165,
+   "ReentelPro": 0.195,
+   "SuperReentel": 0.24
+  },
+  "fuenteRentabilidad": "estimada/estimada"
+ },
+ {
+  "id": "MIA-5",
+  "nombre": "Miami 5",
+  "estado": "EN REFORMA",
+  "ubicacion": "USA",
+  "tipologiaExplotacion": "Flipping",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2028-02-09",
+  "fuenteFechaFin": "I",
+  "mesesRestantes": 18,
+  "mesesAS": 18,
+  "descripcion": "El proyecto Miami 5 (MIA-5) consiste en la adquisición, reforma integral y posterior venta (reposicionamiento value-add) de una vivienda unifamiliar de alta gama situada en la exclusiva zona residencial de Kendall Ranches, junto al Killian Palms Country Club, en Miami, Estados Unidos.",
+  "dossier": "https://d23t4e7dm0xzj0.cloudfront.net/MIA-5/docs-es/1783353176360_mia_5_dossier_comercial.pdf",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.165,
+   "ReentelPro": 0.195,
+   "SuperReentel": 0.24
+  },
+  "fuenteRentabilidad": "estimada/estimada"
+ },
+ {
+  "id": "CAR-1",
+  "nombre": "Caribe 1",
+  "estado": "PRELANZAMIENTO",
+  "ubicacion": "México",
+  "tipologiaExplotacion": "Préstamo promotor",
+  "tipologiaDividendos": "rendimientos mensuales",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2029-01-30",
+  "fuenteFechaFin": "F",
+  "mesesRestantes": 30,
+  "mesesAS": 29.5890411,
+  "descripcion": "",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0.1,
+   "ReentelPro": 0.11,
+   "SuperReentel": 0.13
+  },
+  "plusvalia": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "fuenteRentabilidad": "estimada/estimada"
+ },
+ {
+  "id": "CAR-2",
+  "nombre": "Caribe 2",
+  "estado": "PRELANZAMIENTO",
+  "ubicacion": "México",
+  "tipologiaExplotacion": "Flipping",
+  "tipologiaDividendos": "rendimientos a final del proyecto",
+  "pxEmision": 100.0,
+  "divisa": "$",
+  "fechaFin": "2029-01-30",
+  "fuenteFechaFin": "F",
+  "mesesRestantes": 30,
+  "mesesAS": 29.5890411,
+  "descripcion": "",
+  "dossier": "",
+  "whitepaper": "",
+  "rentAlquiler": {
+   "Reentel": 0,
+   "ReentelPro": 0,
+   "SuperReentel": 0
+  },
+  "plusvalia": {
+   "Reentel": 0.275,
+   "ReentelPro": 0.325,
+   "SuperReentel": 0.45
+  },
+  "fuenteRentabilidad": "estimada/estimada"
+ }
+]
