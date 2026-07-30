@@ -62,7 +62,7 @@ COL = {
     'id': 1, 'nombre': 2, 'estado': 3,
     'pxEmision': 11, 'divisa': 12, 'ubicacion': 15,
     'tipExpl': 16, 'tipDiv': 17,
-    'mesesAS': 45, 'descripcion': 75, 'dossier': 95, 'whitepaper': 96,
+    'mesesAS': 45, 'inicioRenta': 5, 'descripcion': 75, 'dossier': 95, 'whitepaper': 96,
 }
 FECHA_FIN_CASCADA = [79, 56, 9, 6]          # CA, BD, I, F
 NOMBRE_CASCADA = {79: 'CA', 56: 'BD', 9: 'I', 6: 'F'}
@@ -123,6 +123,7 @@ def extraer(ruta, hoy=None):
             'pxEmision': numero(ws.cell(r, COL['pxEmision']).value),
             'divisa': texto(ws.cell(r, COL['divisa']).value),
             'fechaFin': fin.isoformat() if fin else None,
+            'inicioRenta': (lambda v: v.date().isoformat() if hasattr(v,'date') else None)(ws.cell(r, COL['inicioRenta']).value),
             'fuenteFechaFin': via,
             'mesesRestantes': meses_entre(hoy, fin) if fin else None,
             'mesesAS': numero(ws.cell(r, COL['mesesAS']).value),

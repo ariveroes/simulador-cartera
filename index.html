@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Simulación de cartera inmobiliaria — Reental Wealth</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --fondo:#08111f; --panel:#0d1b2e; --card:rgba(255,255,255,.045);
+    --linea:rgba(255,255,255,.09); --oro:#f5a623; --azul:#7ab0f0;
+    --verde:#7ecba1; --navy:#1e4080; --suave:rgba(255,255,255,.62); --tenue:rgba(255,255,255,.38);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Barlow',system-ui,-apple-system,sans-serif;background:var(--fondo);color:#fff;line-height:1.45}
+  .wrap{max-width:1180px;margin:0 auto;padding:26px 18px 60px}
+  header h1{font-size:29px;font-weight:800;letter-spacing:-.5px}
+  header h1 em{font-style:normal;color:var(--oro)}
+  header p{color:var(--suave);font-size:13.5px;margin-top:6px;max-width:64ch}
+  .sec-hdr{background:linear-gradient(90deg,var(--oro),#e08c18);padding:10px 18px;border-radius:6px;margin:24px 0 14px}
+  .sec-hdr h2{font-size:13.5px;font-weight:700;color:var(--panel);letter-spacing:.5px;text-transform:uppercase}
+  .grid{display:grid;grid-template-columns:330px 1fr;gap:20px;align-items:start}
+  @media (max-width:880px){.grid{grid-template-columns:1fr}}
+  .box{background:var(--panel);border:1px solid var(--linea);border-radius:10px;padding:17px}
+  .box.flush{padding:0;overflow:hidden}
+  .campo{margin-bottom:17px}
+  .campo:last-child{margin-bottom:0}
+  .campo>label{display:block;font-size:10.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:var(--tenue);margin-bottom:7px}
+  .opts{display:flex;flex-direction:column;gap:6px}
+  .opt{display:flex;align-items:flex-start;gap:9px;background:var(--card);border:1px solid var(--linea);border-radius:7px;padding:9px 11px;cursor:pointer;font-size:13px}
+  .opt:hover{border-color:rgba(245,166,35,.45)}
+  .opt input{margin-top:3px;accent-color:var(--oro);flex-shrink:0}
+  .opt span small{display:block;color:var(--tenue);font-size:11px;line-height:1.35}
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{display:flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--linea);border-radius:20px;padding:5px 11px;cursor:pointer;font-size:12px}
+  .chip input{accent-color:var(--oro)}
+  .chip b{color:var(--tenue);font-weight:600;font-size:11px}
+  input[type=number]{width:100%;background:rgba(0,0,0,.28);border:1px solid var(--linea);border-radius:7px;padding:9px 11px;color:#fff;font-family:inherit;font-size:15px;font-weight:600}
+  input[type=number]:focus,.opt:focus-within,.chip:focus-within{outline:2px solid var(--oro);outline-offset:1px}
+  .fila2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .nota{font-size:11px;color:var(--tenue);margin-top:5px;line-height:1.4}
+  button.go{width:100%;background:var(--oro);color:var(--panel);border:none;border-radius:8px;padding:13px;font-family:inherit;font-size:15px;font-weight:800;cursor:pointer}
+  button.go:hover{background:#ffb733}
+  .vacio{background:var(--panel);border:1px dashed var(--linea);border-radius:10px;padding:42px 24px;text-align:center;color:var(--tenue);font-size:14px}
+  .aviso{background:rgba(245,166,35,.09);border:1px solid rgba(245,166,35,.3);border-radius:8px;padding:12px 15px;font-size:13px;color:rgba(255,255,255,.85);margin-bottom:14px}
+  .kpi-ancho{background:var(--card);border:1px solid var(--linea);border-radius:10px;padding:14px;text-align:center;margin-bottom:12px}
+  .kpi-ancho span{display:block;font-size:12.5px;color:var(--suave);margin-bottom:3px}
+  .kpi-ancho strong{font-size:29px;font-weight:700}
+  .dos{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+  @media (max-width:620px){.dos{grid-template-columns:1fr}}
+  .badge{display:inline-block;padding:3px 11px;border-radius:20px;font-size:11px;font-weight:700;margin-bottom:9px}
+  .badge.base{background:#1e3a6e;color:var(--azul)}
+  .badge.prop{background:#c17f00;color:var(--panel)}
+  .linea{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:12.5px}
+  .linea:last-child{border-bottom:none}
+  .linea>span{color:var(--suave)}
+  .linea b{font-size:17px;font-weight:700;white-space:nowrap}
+  .linea b.oro{color:var(--oro)} .linea b.azul{color:var(--azul)}
+  .linea.total b{font-size:19px;font-weight:800}
+  .pies{font-size:10.5px;color:var(--tenue);line-height:1.65;margin:-4px 0 12px}
+  .bar-row{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+  .bar-nm{font-size:11.5px;color:var(--suave);width:150px;flex-shrink:0;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  @media (max-width:620px){.bar-nm{width:96px}}
+  .bar-track{flex:1;height:23px;background:rgba(255,255,255,.07);border-radius:4px;overflow:hidden;display:flex}
+  .bf{height:100%;display:flex;align-items:center;padding:0 7px;font-size:11px;font-weight:700;border-radius:4px;white-space:nowrap;min-width:fit-content}
+  .bf.navy{background:var(--navy)} .bf.gold{background:var(--oro);color:var(--panel)}
+  .bf.steel{background:#5b7fa6} .bf.gray{background:rgba(255,255,255,.16)}
+  .bf.green{background:var(--verde);color:var(--panel)}
+  .sub{font-size:12px;font-weight:700;color:var(--oro);margin-bottom:10px;letter-spacing:.3px}
+  .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  table{width:100%;border-collapse:collapse;font-size:12.5px;min-width:760px}
+  th{background:rgba(255,255,255,.07);padding:8px 9px;text-align:center;font-size:11px;font-weight:600;color:var(--suave);border-bottom:1px solid var(--linea);white-space:nowrap}
+  td{padding:8px 9px;text-align:center;border-bottom:1px solid rgba(255,255,255,.05);color:rgba(255,255,255,.85);white-space:nowrap}
+  th.L,td.L{text-align:left}
+  tr:last-child td{border-bottom:none}
+  td.oro{color:var(--oro);font-weight:700}
+  td.verde{color:var(--verde);font-weight:700}
+  .tag{padding:3px 8px;border-radius:20px;font-size:10px;font-weight:700;white-space:nowrap}
+  .tex{background:rgba(30,180,100,.18);color:#4de4a0}
+  .trfm{background:rgba(245,166,35,.2);color:var(--oro)}
+  .tcns{background:rgba(100,150,220,.2);color:var(--azul)}
+  .tpre{background:rgba(180,100,220,.2);color:#cc88ff}
+  .tfin{background:rgba(60,180,220,.2);color:#60d0f0}
+  .ficha{background:var(--card);border:1px solid var(--linea);border-radius:10px;padding:16px 19px;margin-bottom:11px;display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  @media (max-width:760px){.ficha{grid-template-columns:1fr;gap:14px}}
+  .ficha h4{font-size:18px;font-weight:800;margin-bottom:3px}
+  .fid{display:inline-block;background:rgba(255,255,255,.1);padding:2px 9px;border-radius:4px;font-size:10.5px;color:var(--suave);margin-bottom:9px}
+  .fi{font-size:12px;color:var(--suave);margin-bottom:4px}
+  .fi b{color:#fff}
+  .fstat{margin-bottom:8px}
+  .fstat .l{font-size:10.5px;color:var(--tenue);margin-bottom:2px}
+  .fstat .v{font-size:14px;font-weight:700}
+  .rb{padding:4px 10px;border-radius:20px;font-size:11.5px;font-weight:700;display:inline-block;margin-right:5px}
+  .rb-sr{background:var(--oro);color:var(--panel)} .rb-base{background:rgba(255,255,255,.1);color:rgba(255,255,255,.78)}
+  .desc{font-size:11.5px;color:rgba(255,255,255,.65);line-height:1.5;margin-top:6px}
+  .enl{display:inline-flex;align-items:center;gap:5px;border-radius:6px;padding:5px 10px;font-size:11px;font-weight:600;text-decoration:none;margin:8px 6px 0 0}
+  .enl.d{background:rgba(245,166,35,.12);border:1px solid rgba(245,166,35,.3);color:var(--oro)}
+  .enl.w{background:rgba(122,176,240,.1);border:1px solid rgba(122,176,240,.3);color:var(--azul)}
+  .pie{margin-top:24px;font-size:11px;color:var(--tenue);line-height:1.6;border-top:1px solid var(--linea);padding-top:13px}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Simulación de <em>cartera inmobiliaria</em></h1>
+  <p>Página de prueba del motor. Datos: foto de los proyectos abiertos del máster a 30 de julio de 2026,
+  57 proyectos con seis meses o más pendientes hasta su fecha estimada de fin.</p>
+</header>
+
+<div class="sec-hdr"><h2>Preferencias</h2></div>
+
+<div class="grid">
+  <div class="box">
+    <div class="campo">
+      <label>Objetivo</label>
+      <div class="opts">
+        <label class="opt"><input type="radio" name="objetivo" value="recurrente" checked>
+          <span>Ingresos periódicos<small>Proyectos que reparten rendimientos durante su vida</small></span></label>
+        <label class="opt"><input type="radio" name="objetivo" value="final">
+          <span>Solo rentabilidad final<small>Proyectos que pagan todo a la desinversión</small></span></label>
+        <label class="opt"><input type="radio" name="objetivo" value="maxima">
+          <span>Máxima rentabilidad<small>Mayor rentabilidad anualizada, sin filtrar tipología</small></span></label>
+      </div>
+    </div>
+
+    <div class="campo">
+      <label>Mercados</label>
+      <div class="chips" id="mercados"></div>
+      <p class="nota">Sin marcar ninguno se consideran todos.</p>
+    </div>
+
+    <div class="campo">
+      <label>Estatus del inversor</label>
+      <div class="opts">
+        <label class="opt"><input type="radio" name="estatus" value="ReentelPro"><span>ReentelPro</span></label>
+        <label class="opt"><input type="radio" name="estatus" value="SuperReentel" checked><span>SuperReentel</span></label>
+      </div>
+      <p class="nota">Siempre se compara contra Reentel, el estatus base.</p>
+    </div>
+
+    <div class="campo">
+      <label>Importe</label>
+      <div class="opts" style="margin-bottom:9px">
+        <label class="opt"><input type="radio" name="modo" value="inmobiliario" checked>
+          <span>Solo inmuebles<small>El estatus se paga aparte</small></span></label>
+        <label class="opt"><input type="radio" name="modo" value="total">
+          <span>Importe total<small>Incluye el coste del estatus</small></span></label>
+      </div>
+      <div class="fila2">
+        <div><label for="importe" style="font-size:10px">Importe (€)</label>
+          <input type="number" id="importe" value="50000" min="100" step="100"></div>
+        <div><label for="estatusEur" style="font-size:10px">Coste estatus (€)</label>
+          <input type="number" id="estatusEur" value="7300" min="0" step="100"></div>
+      </div>
+      <p class="nota">El coste del estatus lo introduces tú: el total, no el precio por RNT.</p>
+    </div>
+
+    <div class="campo">
+      <div class="fila2">
+        <div><label for="maxProy" style="font-size:10px">Máx. proyectos</label>
+          <input type="number" id="maxProy" value="5" min="1" max="12"></div>
+        <div><label for="fx" style="font-size:10px">Tipo €/$</label>
+          <input type="number" id="fx" value="1.14535" step="0.0001"></div>
+      </div>
+      <p class="nota" id="fxNota">Tipo del máster. Consultando el del BCE…</p>
+    </div>
+
+    <button class="go" id="simular">Simular cartera</button>
+  </div>
+
+  <div id="salida"><div class="vacio">Elige tus preferencias y pulsa «Simular cartera».</div></div>
+</div>
+
+<p class="pie">
+  Simulación con rentabilidades estimadas. No constituye asesoramiento de inversión ni garantiza resultados.
+  Las rentabilidades de proyectos en explotación son reales; las del resto, estimadas.
+  La rentabilidad anualizada se calcula de forma lineal, igual que en la plantilla de propuestas,
+  por lo que en proyectos próximos a vencer resulta más alta que la rentabilidad realmente percibida.
+</p>
+
+</div>
+
+<script>
+const DATOS = [{"id":"VLC-6","nombre":"Valencia 6","estado":"EN EXPLOTACIÓN","ubicacion":"España","tipologiaExplotacion":"Compra + alquiler + venta","tipologiaDividendos":"rendimientos mensuales + final","pxEmision":100.0,"divisa":"€","mesesRestantes":6,"fechaFin":"2027-02-03","inicioRenta":"2023-01-16","descripcion":"Vivienda de 95 m² en L'Hort de Senabre, a 3 km del centro de Valencia. Junto al metro, la Av. de Giorgeta y el parque central. Explotada en alquiler por habitaciones con suministros, WiFi de alta velocidad, agua y limpieza semanal incluidos.","dossier":"No hay","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/VLC-6/docs-es/1669983713974_whitepaper_valencia_6_docx.pdf","rentAlquiler":{"Reentel":0.1062485107,"ReentelPro":0.1062485107,"SuperReentel":0.1062485107},"plusvalia":{"Reentel":0.01571671232876709,"ReentelPro":0.01571671232876709,"SuperReentel":0.01571671232876709}},{"id":"CLVM-2","nombre":"Coliving Malaga 2","estado":"EN EXPLOTACIÓN","ubicacion":"España","tipologiaExplotacion":"Compra + alquiler + venta","tipologiaDividendos":"rendimientos mensuales + final","pxEmision":100.0,"divisa":"€","mesesRestantes":34,"fechaFin":"2029-06-15","inicioRenta":"2023-03-12","descripcion":"Edificio de 210 m² con 11 habitaciones y 10 baños a 10 km del centro de Málaga. Concepto coliving de alta calidad, ideal para estudiantes y trabajadores. Alquiler por habitaciones para maximizar su rentabilidad.","dossier":"No hay","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/CLVM-2/docs-es/1674565289339_whitepaper_coliving_malaga_2.pdf","rentAlquiler":{"Reentel":0.1020415694,"ReentelPro":0.1020415694,"SuperReentel":0.1020415694},"plusvalia":{"Reentel":0.05704657534246571,"ReentelPro":0.05704657534246571,"SuperReentel":0.05704657534246571}},{"id":"MLG-2","nombre":"Malaga 2","estado":"EN EXPLOTACIÓN","ubicacion":"España","tipologiaExplotacion":"Compra + alquiler + venta","tipologiaDividendos":"rendimientos mensuales + final","pxEmision":100.0,"divisa":"€","mesesRestantes":36,"fechaFin":"2029-08-04","inicioRenta":"2023-08-04","descripcion":"Vivienda en el corazón de Málaga, cerca de universidades y centros de trabajo. Zona con alta demanda. Alquiler por habitaciones, con suministros, WiFi de alta velocidad, agua y limpieza semanal incluidos.","dossier":"No hay","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/MLG-2/docs-es/1727806362412_whitepaper_mlg_2.pdf","rentAlquiler":{"Reentel":0.09826325712,"ReentelPro":0.09826325712,"SuperReentel":0.09826325712},"plusvalia":{"Reentel":0.01864876712328767,"ReentelPro":0.01864876712328767,"SuperReentel":0.01864876712328767}},{"id":"MLG-3","nombre":"Malaga 3","estado":"EN EXPLOTACIÓN","ubicacion":"España","tipologiaExplotacion":"Compra + alquiler + venta","tipologiaDividendos":"rendimientos mensuales + final","pxEmision":100.0,"divisa":"€","mesesRestantes":27,"fechaFin":"2028-11-04","inicioRenta":"2023-11-04","descripcion":"Inversión inmobiliaria estratégica en Málaga, España. Este céntrico complejo consta de seis habitaciones diseñadas para el alquiler por habitaciones, optimizando la comodidad y la rentabilidad. Situado en una zona de alta demanda, próxima a universidades y centros de trabajo, ofrece una excelente oportunidad de inversión para generar ingresos pasivos recurrentes.","dossier":"No hay","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/MLG-3/docs-es/1727806253748_whitepaper_mlg_3.pdf","rentAlquiler":{"Reentel":0.09386687043,"ReentelPro":0.09386687043,"SuperReentel":0.09386687043},"plusvalia":{"Reentel":0.12107178082191783,"ReentelPro":0.12107178082191783,"SuperReentel":0.12107178082191783}},{"id":"MLG-4","nombre":"Malaga 4","estado":"EN EXPLOTACIÓN","ubicacion":"España","tipologiaExplotacion":"Compra + alquiler + venta","tipologiaDividendos":"rendimientos mensuales + final","pxEmision":100.0,"divisa":"€","mesesRestantes":15,"fechaFin":"2027-11-14","inicioRenta":"2023-11-11","descripcion":"Oportunidad exclusiva de inversión en el dinámico mercado de Málaga. Vivienda con acceso rápido al barrio Soho, epicentro cultural y artístico de la ciudad, muy demandada por nómadas digitales y profesionales remotos.","dossier":"No hay","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/MLG-4/docs-es/1727806233966_whitepaper_mlg_4.pdf","rentAlquiler":{"Reentel":0.08668043113,"ReentelPro":0.08668043113,"SuperReentel":0.08668043113},"plusvalia":{"Reentel":0.052951780821917815,"ReentelPro":0.052951780821917815,"SuperReentel":0.052951780821917815}},{"id":"CDP-3","nombre":"Castellon 3","estado":"EN EXPLOTACIÓN","ubicacion":"España","tipologiaExplotacion":"Compra + alquiler + venta","tipologiaDividendos":"rendimientos mensuales + final","pxEmision":100.0,"divisa":"€","mesesRestantes":16,"fechaFin":"2027-12-15","inicioRenta":"2023-11-24","descripcion":"Vivienda muy céntrica junto a la plaza de toros y el mercado central de Castellón. Zona de alta demanda de alquiler por habitaciones. Suministros, WiFi de alta velocidad, agua y limpieza semanal incluidos.","dossier":"No hay","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/CDP-3/docs-es/1727806274965_whitepaper_cdp_3.pdf","rentAlquiler":{"Reentel":0.0840022988,"ReentelPro":0.0840022988,"SuperReentel":0.0840022988},"plusvalia":{"Reentel":0.04495534246575339,"ReentelPro":0.04495534246575339,"SuperReentel":0.04495534246575339}},{"id":"JAX-5","nombre":"Jacksonville 5","estado":"EN EXPLOTACIÓN","ubicacion":"USA","tipologiaExplotacion":"Compra + alquiler + venta","tipologiaDividendos":"rendimientos mensuales + final","pxEmision":100.0,"divisa":"$","mesesRestantes":16,"fechaFin":"2027-12-15","inicioRenta":"2023-12-01","descripcion":"Inversión inmobiliaria premium en Jacksonville, Florida. Vivienda de 132 m² con cochera y patio trasero. Florida ha superado a Nueva York como segundo mercado inmobiliario más valioso de EE.UU. Alta demanda de alquiler por habitaciones.","dossier":"No hay","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/JAX-5/docs-es/1697451603157_memo_jax_5_docx.pdf","rentAlquiler":{"Reentel":0.08353455738,"ReentelPro":0.08353455738,"SuperReentel":0.08353455738},"plusvalia":{"Reentel":0.04005150684931508,"ReentelPro":0.04005150684931508,"SuperReentel":0.04005150684931508}},{"id":"MIA-2","nombre":"Miami 2","estado":"EN CONSTRUCCIÓN","ubicacion":"USA","tipologiaExplotacion":"Compra + alquiler + venta","tipologiaDividendos":"rendimientos mensuales + final","pxEmision":100.0,"divisa":"$","mesesRestantes":41,"fechaFin":"2030-01-05","inicioRenta":"2024-01-05","descripcion":"Vivienda vacacional en West Eleventh Residences, Miami. Una de las 659 unidades de lujo con tecnología inteligente PMG, gimnasio, piscina resort, spa, coworking y restaurante de autor. Vistas a la ciudad y la bahía de Biscayne, en el epicentro cultural del distrito 11.","dossier":"No hay","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/MIA-2/docs-es/1700491817573_memo_mia_2.pdf","rentAlquiler":{"Reentel":0.0747,"ReentelPro":0.0747,"SuperReentel":0.0747},"plusvalia":{"Reentel":0.4642906849315069,"ReentelPro":0.4642906849315069,"SuperReentel":0.4642906849315069}},{"id":"MIA-3","nombre":"Miami 3","estado":"EN CONSTRUCCIÓN","ubicacion":"USA","tipologiaExplotacion":"Compra + alquiler + venta","tipologiaDividendos":"rendimientos mensuales + final","pxEmision":100.0,"divisa":"$","mesesRestantes":41,"fechaFin":"2030-01-08","inicioRenta":"2024-01-08","descripcion":"Vivienda vacacional en West Eleventh Residences, Miami. Una de las 659 unidades de lujo con tecnología inteligente PMG, gimnasio, piscina resort, spa, coworking y restaurante de autor. Vistas a la ciudad y la bahía de Biscayne, en el epicentro cultural del distrito 11.","dossier":"No hay","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/MIA-3/docs-es/1700661693056_memo_mia_3.pdf","rentAlquiler":{"Reentel":0.0739,"ReentelPro":0.0739,"SuperReentel":0.0739},"plusvalia":{"Reentel":0.45799506849315075,"ReentelPro":0.45799506849315075,"SuperReentel":0.45799506849315075}},{"id":"MLG-5","nombre":"Malaga 5","estado":"EN EXPLOTACIÓN","ubicacion":"España","tipologiaExplotacion":"Compra + alquiler + venta","tipologiaDividendos":"rendimientos mensuales + final","pxEmision":100.0,"divisa":"€","mesesRestantes":18,"fechaFin":"2028-02-13","inicioRenta":"2024-01-19","descripcion":"Proyecto inmobiliario prime en Málaga, enfocado en maximizar los ingresos pasivos. Vivienda de 257 m² compuesta por dos estudios independientes, cada uno con cocina, loft y baño propios. A 15 minutos del centro y las playas, cerca de universidades y ciudad deportiva. Alta demanda de nómadas digitales y profesionales remotos.","dossier":"No hay","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/MLG-5/docs-es/1727806188645_whitepaper_mlg_5.pdf","rentAlquiler":{"Reentel":0.07319816905,"ReentelPro":0.07319816905,"SuperReentel":0.07319816905},"plusvalia":{"Reentel":0.032143835616438354,"ReentelPro":0.032143835616438354,"SuperReentel":0.032143835616438354}},{"id":"MLG-6","nombre":"Malaga 6","estado":"EN EXPLOTACIÓN","ubicacion":"España","tipologiaExplotacion":"Compra + alquiler + venta","tipologiaDividendos":"rendimientos mensuales + final","pxEmision":100.0,"divisa":"€","mesesRestantes":19,"fechaFin":"2028-03-16","inicioRenta":"2024-03-16","descripcion":"Vivienda de 88 m² en Bailén-Miraflores, Málaga, elegida segunda mejor ciudad mundial para teletrabajo. Hub de empresas como Google, Globant y Citi. Alta demanda estructural con oferta limitada. Explotada en alquiler por habitaciones.","dossier":"No hay","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/MLG-6/docs-es/1727806161125_whitepaper_mlg_6.pdf","rentAlquiler":{"Reentel":0.08609273574,"ReentelPro":0.08609273574,"SuperReentel":0.08609273574},"plusvalia":{"Reentel":0.025342465753424637,"ReentelPro":0.025342465753424637,"SuperReentel":0.025342465753424637}},{"id":"SHL-1","nombre":"Libeen 1","estado":"EN EXPLOTACIÓN","ubicacion":"España","tipologiaExplotacion":"Préstamo promotor","tipologiaDividendos":"rendimientos mensuales","pxEmision":100.0,"divisa":"€","mesesRestantes":57,"fechaFin":"2031-05-11","inicioRenta":"2024-04-06","descripcion":"Proyecto de alquiler con opción a compra junto a Libeen, fintech líder en España. Contratos a largo plazo ya firmados con usuarios. Duración de 7 años. Modelo probado en EE.UU. con empresas como Home Partners of América (vendida a Blackstone por 6B$). Más de 40.000 usuarios en plataforma.","dossier":"No hay","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/SHL-1/docs-es/1708362957969_whitepaper_shl_1_docx.pdf","rentAlquiler":{"Reentel":0.1040308954,"ReentelPro":0.1040308954,"SuperReentel":0.1040308954},"plusvalia":{"Reentel":0,"ReentelPro":-0.0005479452054795164,"SuperReentel":0}},{"id":"MLG-7","nombre":"Malaga 7","estado":"EN EXPLOTACIÓN","ubicacion":"España","tipologiaExplotacion":"Compra + alquiler + venta","tipologiaDividendos":"rendimientos mensuales + final","pxEmision":100.0,"divisa":"€","mesesRestantes":24,"fechaFin":"2028-08-20","inicioRenta":"2024-05-24","descripcion":"Vivienda de 73 m² en Bailén-Miraflores, Málaga, segunda mejor ciudad mundial para teletrabajo. Hub de empresas como Google, Globant y Citi. Demanda que supera la oferta. Explotada en alquiler por habitaciones.","dossier":"No hay","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/MLG-7/docs-es/1727806139788_whitepaper_mlg_7.pdf","rentAlquiler":{"Reentel":0.09318731143,"ReentelPro":0.09318731143,"SuperReentel":0.09318731143},"plusvalia":{"Reentel":0.012929315068493152,"ReentelPro":0.012929315068493152,"SuperReentel":0.012929315068493152}},{"id":"PAZ-1","nombre":"La Paz","estado":"EN EXPLOTACIÓN","ubicacion":"México","tipologiaExplotacion":"Préstamo promotor","tipologiaDividendos":"rendimientos mensuales","pxEmision":100.0,"divisa":"$","mesesRestantes":35,"fechaFin":"2029-07-29","inicioRenta":"2024-06-30","descripcion":"Cartera en Yucatán (Lik Nah), Dubái (entorno del Burj Khalifa) y Samaná (Monte Rojo). Lujo, sostenibilidad y mercados en auge. Pagos mensuales más plusvalía final. El proyecto número 100 de Reental.","dossier":"No hay","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/PAZ-1/docs-es/1715344174263_memo_paz_1.pdf","rentAlquiler":{"Reentel":0.111468191,"ReentelPro":0.1322043994,"SuperReentel":0.1721545007},"plusvalia":{"Reentel":0,"ReentelPro":-0.0003013698630136563,"SuperReentel":0}},{"id":"MLG-8","nombre":"Málaga 8","estado":"EN EXPLOTACIÓN","ubicacion":"España","tipologiaExplotacion":"Compra + alquiler + venta","tipologiaDividendos":"rendimientos mensuales + final","pxEmision":100.0,"divisa":"€","mesesRestantes":27,"fechaFin":"2028-11-15","inicioRenta":"2024-08-25","descripcion":"Vivienda de 73 m² en Bailén-Miraflores, Málaga, segunda mejor ciudad mundial para teletrabajo. Hub de empresas como Google, Globant y Citi. Demanda que supera la oferta. Explotada en alquiler por habitaciones.","dossier":"No hay","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/MLG-8/docs-es/1720449989919_whitepaper_mlg_8.pdf","rentAlquiler":{"Reentel":0.09192707551,"ReentelPro":0.09192707551,"SuperReentel":0.09192707551},"plusvalia":{"Reentel":0.008922191780821875,"ReentelPro":0.008922191780821875,"SuperReentel":0.008922191780821875}},{"id":"BKL-1","nombre":"Bacalar 1","estado":"EN EXPLOTACIÓN","ubicacion":"México","tipologiaExplotacion":"Préstamo promotor","tipologiaDividendos":"rendimientos mensuales","pxEmision":100.0,"divisa":"$","mesesRestantes":16,"fechaFin":"2027-12-12","inicioRenta":"2024-11-10","descripcion":"Desarrollo de ecoturismo de lujo en Bacalar con acceso directo a la laguna de 7 colores. Piscina, camastros y zonas de relax. Más de 500 ha como garantía. Impulsado por el futuro Tren Maya que conectará Cancún y Chetumal. Rendimientos mensuales a cargo de M2Capital.","dossier":"No hay","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/BKL-1/docs-es/1727439792183_memo_bkl_1.pdf","rentAlquiler":{"Reentel":0.1092845161,"ReentelPro":0.1288258065,"SuperReentel":0.1586006452},"plusvalia":{"Reentel":0,"ReentelPro":0,"SuperReentel":0}},{"id":"BKL-2","nombre":"Bacalar 2","estado":"EN EXPLOTACIÓN","ubicacion":"México","tipologiaExplotacion":"Préstamo promotor","tipologiaDividendos":"rendimientos mensuales","pxEmision":100.0,"divisa":"$","mesesRestantes":19,"fechaFin":"2028-03-06","inicioRenta":"2025-02-01","descripcion":"Desarrollo de ecoturismo de lujo en Bacalar con acceso directo a la laguna de 7 colores. Piscina, camastros y zonas de relax. Respaldado por garantía fiduciaria. Impulsado por el futuro Tren Maya. Rendimientos mensuales a cargo de M2Capital.","dossier":"No hay","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/BKL-2/docs-es/1734357606935_memo_bkl_2.pdf","rentAlquiler":{"Reentel":0.109863038,"ReentelPro":0.1311493671,"SuperReentel":0.1614159494},"plusvalia":{"Reentel":0,"ReentelPro":0,"SuperReentel":0}},{"id":"HOU-1","nombre":"Houston 1","estado":"EN EXPLOTACIÓN","ubicacion":"USA","tipologiaExplotacion":"Compra + alquiler + venta","tipologiaDividendos":"rendimientos mensuales + final","pxEmision":100.0,"divisa":"$","mesesRestantes":42,"fechaFin":"2030-02-22","inicioRenta":"2025-02-16","descripcion":"Vivienda de 312 m² con dos suites independientes, piscina, jacuzzi y patio en el barrio MacGregor de Houston. Próxima al Texas Medical Center y la Universidad de Rice. Explotada en alquiler vacacional de lujo. Houston registra un crecimiento del 60,1% en valor de propiedades en 5 años.","dossier":"No hay","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/HOU-1/docs-es/1735820001910_memo_hou_1.pdf","rentAlquiler":{"Reentel":0.03758532787,"ReentelPro":0.03758532787,"SuperReentel":0.03758532787},"plusvalia":{"Reentel":0.1304,"ReentelPro":0.1304,"SuperReentel":0.1304}},{"id":"AZN-1","nombre":"Arizona 1","estado":"EN EXPLOTACIÓN","ubicacion":"USA","tipologiaExplotacion":"Compra + alquiler + venta","tipologiaDividendos":"rendimientos mensuales + final","pxEmision":100.0,"divisa":"$","mesesRestantes":43,"fechaFin":"2030-03-17","inicioRenta":"2025-03-15","descripcion":"Vivienda de 242 m² con 10 habitaciones en el área metropolitana de Phoenix. Modelo PadSplit de alquiler por habitaciones con contratos independientes. Phoenix registra un incremento del 62,2% en valor de propiedades en los últimos 5 años.","dossier":"No hay","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/AZN-1/docs-es/1737732595534_memo_azn_1_docx.pdf","rentAlquiler":{"Reentel":0.107372527,"ReentelPro":0.107372527,"SuperReentel":0.107372527},"plusvalia":{"Reentel":0.2463,"ReentelPro":0.2463,"SuperReentel":0.2463}},{"id":"HOU-2","nombre":"Houston 2","estado":"EN EXPLOTACIÓN","ubicacion":"USA","tipologiaExplotacion":"Compra + alquiler + venta","tipologiaDividendos":"rendimientos mensuales + final","pxEmision":100.0,"divisa":"$","mesesRestantes":43,"fechaFin":"2030-03-26","inicioRenta":"2025-03-24","descripcion":"Vivienda completamente reformada en Third Ward, Houston. Cada habitación con baño privado. Próxima a la Universidad de Houston y Texas Southern University. Modelo combinado de alquiler y venta con garantía hipotecaria. Houston registra un crecimiento del 60,1% en valor de propiedades en 5 años.","dossier":"No hay","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/HOU-2/docs-es/1738678687264_memo_hou_2.pdf","rentAlquiler":{"Reentel":0.03362431718,"ReentelPro":0.03362431718,"SuperReentel":0.03362431718},"plusvalia":{"Reentel":0.204,"ReentelPro":0.204,"SuperReentel":0.204}},{"id":"HOU-3","nombre":"Houston 3","estado":"EN EXPLOTACIÓN","ubicacion":"USA","tipologiaExplotacion":"Compra + alquiler + venta","tipologiaDividendos":"rendimientos mensuales + final","pxEmision":100.0,"divisa":"$","mesesRestantes":44,"fechaFin":"2030-04-10","inicioRenta":"2025-04-04","descripcion":"Exclusivo proyecto residencial unifamiliar en Houston, Texas (EE. UU.). Diseñado para capturar la sólida demanda habitacional local mediante la gestión residencial tradicional, este activo ofrece atractivos rendimientos pasivos.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/HOU-3/docs-es/1739800668011_houston_3_dossier_comercial.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/HOU-3/docs-es/1739789930889_memo_hou_3_esp.pdf","rentAlquiler":{"Reentel":0.01841972727,"ReentelPro":0.01841972727,"SuperReentel":0.01841972727},"plusvalia":{"Reentel":0.19226520547945203,"ReentelPro":0.1923,"SuperReentel":0.1923}},{"id":"ATL-1","nombre":"Atlanta 1","estado":"EN EXPLOTACIÓN","ubicacion":"USA","tipologiaExplotacion":"Compra + alquiler + venta","tipologiaDividendos":"rendimientos mensuales + final","pxEmision":100.0,"divisa":"$","mesesRestantes":45,"fechaFin":"2030-05-14","inicioRenta":"2025-04-13","descripcion":"Vivienda de 268 m² renovada en Atlanta, motor económico del sureste de EE.UU. Modelo PadSplit de alquiler por habitaciones con contratos independientes. Alta demanda de jóvenes profesionales y sector tecnológico.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/ATL-1/docs-es/1740493288939_atlanta_1_atl_1_dossier_comercial.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/ATL-1/docs-es/1740492892665_memo_atl_1.pdf","rentAlquiler":{"Reentel":0.03395349754,"ReentelPro":0.03395349754,"SuperReentel":0.03395349754},"plusvalia":{"Reentel":0.1245,"ReentelPro":0.1245,"SuperReentel":0.1245}},{"id":"BKL-3","nombre":"Bacalar 3","estado":"EN EXPLOTACIÓN","ubicacion":"México","tipologiaExplotacion":"Préstamo promotor","tipologiaDividendos":"rendimientos mensuales","pxEmision":100.0,"divisa":"$","mesesRestantes":20,"fechaFin":"2028-04-26","inicioRenta":"2025-04-26","descripcion":"Desarrollo de ecoturismo de lujo en Bacalar con acceso directo a la laguna de 7 colores. Piscina, camastros y zonas de relax. Más de 500 ha como garantía. Impulsado por el futuro Tren Maya. Rendimientos mensuales a cargo de M2Capital.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/BKL-3/docs-es/1741345696910_bacalar_3_bkl_3_dossier_comercial_1_compressed.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/BKL-3/docs-es/1741169152397_memo_bkl_3_esp_2.pdf","rentAlquiler":{"Reentel":0.1097949057,"ReentelPro":0.1297528302,"SuperReentel":0.1596965094},"plusvalia":{"Reentel":0,"ReentelPro":0,"SuperReentel":0}},{"id":"YCT-1","nombre":"Yucatán 1","estado":"EN EXPLOTACIÓN","ubicacion":"México","tipologiaExplotacion":"Préstamo promotor","tipologiaDividendos":"rendimientos mensuales","pxEmision":100.0,"divisa":"$","mesesRestantes":21,"fechaFin":"2028-05-05","inicioRenta":"2025-05-05","descripcion":"Desarrollo de suelo sostenible cerca de Mérida y la Reserva de la Biosfera de Celestún. Ecoturismo y turismo de lujo en auge. Rendimientos mensuales a cargo de MDOS Capital, con lotes como garantía de inversión.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/YCT-1/docs-es/1742489384951_yucatan_1_yct_1_dossier_comercial_compressed.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/YCT-1/docs-es/1742489384304_memo_yct_1_docx_compressed.pdf","rentAlquiler":{"Reentel":0.109525012,"ReentelPro":0.1294343133,"SuperReentel":0.1493505542},"plusvalia":{"Reentel":0,"ReentelPro":0,"SuperReentel":0}},{"id":"FMY-1","nombre":"Fort Myers 1","estado":"EN CONSTRUCCIÓN","ubicacion":"USA","tipologiaExplotacion":"Préstamo promotor","tipologiaDividendos":"rendimientos a final del proyecto","pxEmision":100.0,"divisa":"$","mesesRestantes":21,"fechaFin":"2028-05-22","inicioRenta":"2025-05-12","descripcion":"Complejo multifamiliar clase A de 300 unidades en Fort Myers, Florida, con piscina resort, gimnasio y cargadores eléctricos. Ciudad con un crecimiento poblacional del 40% desde 2010. Obra al 30% en el momento de la inversión. Plusvalía al finalizar los 3 años del proyecto.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/FMY-1/docs-es/1743076265812_fort_myers_1_fmy_1_dossier_comercial_compressed.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/FMY-1/docs-es/1743076262949_esp_ppm_fmy_1_compressed.pdf","rentAlquiler":{"Reentel":0,"ReentelPro":0,"SuperReentel":0},"plusvalia":{"Reentel":0.33,"ReentelPro":0.39,"SuperReentel":0.51}},{"id":"YCT-2","nombre":"Yucatán 2","estado":"EN EXPLOTACIÓN","ubicacion":"México","tipologiaExplotacion":"Préstamo promotor","tipologiaDividendos":"rendimientos mensuales","pxEmision":100.0,"divisa":"$","mesesRestantes":24,"fechaFin":"2028-07-30","inicioRenta":"2025-06-27","descripcion":"Desarrollo eco-chic de 288.000 m² en Tetiz, a 45 minutos de Mérida. Arquitectura orgánica, Casa Club y Museo del Henequén junto a la Reserva de Celestún. Turismo de lujo en auge con crecimientos anuales de hasta el 12%. Préstamo promotor con terrenos como garantía.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/YCT-2/docs-es/1747295590291_yucatan_2_yct_2_dossier_comercial.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/YCT-2/docs-es/1747040410082_esp_whitepaper_yct_2.pdf","rentAlquiler":{"Reentel":0.1101567273,"ReentelPro":0.1301705455,"SuperReentel":0.1501909091},"plusvalia":{"Reentel":0,"ReentelPro":0,"SuperReentel":0}},{"id":"GRX-3","nombre":"Granada 3","estado":"EN EXPLOTACIÓN","ubicacion":"España","tipologiaExplotacion":"Compra + alquiler + venta","tipologiaDividendos":"rendimientos mensuales + final","pxEmision":100.0,"divisa":"€","mesesRestantes":36,"fechaFin":"2029-08-28","inicioRenta":"2025-07-13","descripcion":"Proyecto de compra, reforma, alquiler y venta en el centro de Granada, junto al Parque de las Ciencias y la Alhambra. Mercado con más del 15% de crecimiento interanual en alquiler.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/GRX-3/docs-es/1750680866719_granada_3_dossier_comercial.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/GRX-3/docs-es/1750680866263_granada_3_whitepaper.pdf","rentAlquiler":{"Reentel":0.01085129708,"ReentelPro":0.01085129708,"SuperReentel":0.01085129708},"plusvalia":{"Reentel":0.1439,"ReentelPro":0.1439,"SuperReentel":0.1439}},{"id":"DXB-1","nombre":"Dubái 1","estado":"EN REFORMA","ubicacion":"Emiratos Árabes","tipologiaExplotacion":"Préstamo promotor","tipologiaDividendos":"rendimientos a final del proyecto","pxEmision":100.0,"divisa":"$","mesesRestantes":6,"fechaFin":"2027-02-17","inicioRenta":"2025-08-08","descripcion":"Proyecto de compra, reforma y venta en las inmediaciones del Burj Khalifa, el edificio más alto del mundo. Mercado premium con alta liquidez, precio medio de 3.300–4.900 USD/m² y el 85% de población expatriada. Sin rendimientos periódicos; plusvalía íntegra al vencimiento.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/DXB-1/docs-es/1750680064118_dubai_1_dossier_comercial.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/DXB-1/docs-es/1750680063690_dubai_1_whitepaper.pdf","rentAlquiler":{"Reentel":0,"ReentelPro":0,"SuperReentel":0},"plusvalia":{"Reentel":0.24,"ReentelPro":0.24,"SuperReentel":0.24}},{"id":"NPL-1","nombre":"Naples 1","estado":"EN REFORMA","ubicacion":"USA","tipologiaExplotacion":"Préstamo promotor","tipologiaDividendos":"rendimientos a final del proyecto","pxEmision":100.0,"divisa":"$","mesesRestantes":25,"fechaFin":"2028-09-11","inicioRenta":"2025-08-15","descripcion":"","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/NPL-1/docs-es/1750941392602_naples_1_llc_dossier_comercial.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/NPL-1/docs-es/1750933409121_naples_1_llc_whitepaper_esp.pdf","rentAlquiler":{"Reentel":0,"ReentelPro":0,"SuperReentel":0},"plusvalia":{"Reentel":0.36,"ReentelPro":0.45,"SuperReentel":0.51}},{"id":"DNB-1","nombre":"Dania Beach 1","estado":"EN EXPLOTACIÓN","ubicacion":"USA","tipologiaExplotacion":"Préstamo promotor","tipologiaDividendos":"rendimientos trimestrales + final","pxEmision":100.0,"divisa":"$","mesesRestantes":38,"fechaFin":"2029-10-16","inicioRenta":"2025-08-31","descripcion":"El activo subyacente original fue sustituido el 15/4/2026 por Austin 1, hotel de 152 habitaciones en el CBD de Austin, Texas, junto al Capitolio. Más de 27 millones de visitantes anuales. Gestionado por TPG Hotels & Resorts. Estrategia value-add con salida institucional estimada en 36 meses.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/DNB-1/docs-es/1776261094411_aus_1_dossier_comercial.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/DNB-1/docs-es/1776261200531_white_paper_aus_1_esp.pdf","rentAlquiler":{"Reentel":0.0629688189,"ReentelPro":0.0629688189,"SuperReentel":0.0629688189},"plusvalia":{"Reentel":0.12,"ReentelPro":0.24,"SuperReentel":0.32}},{"id":"IDX-1","nombre":"Index 1","estado":"EN EXPLOTACIÓN","ubicacion":"Global","tipologiaExplotacion":"Préstamo promotor","tipologiaDividendos":"rendimientos mensuales","pxEmision":100.0,"divisa":"€","mesesRestantes":38,"fechaFin":"2029-10-17","inicioRenta":"2025-09-29","descripcion":"Cartera diversificada en España, México, EE.UU. y Argentina. Modelo de compra, reforma y venta de activos seleccionados con pagos mensuales desde septiembre 2025. Proyecto colateralizable con cláusula de amortización anticipada.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/IDX-1/docs-es/1753957104364_esp_dossier_comercial_index_1.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/IDX-1/docs-es/1753957103462_esp_whitepaper_index_1.pdf","rentAlquiler":{"Reentel":0.1198995646,"ReentelPro":0.1198995646,"SuperReentel":0.1198995646},"plusvalia":{"Reentel":0,"ReentelPro":0,"SuperReentel":0}},{"id":"SAM-1","nombre":"Samaná 1","estado":"EN EXPLOTACIÓN","ubicacion":"República Dominicana","tipologiaExplotacion":"Préstamo promotor","tipologiaDividendos":"rendimientos trimestrales + final","pxEmision":100.0,"divisa":"$","mesesRestantes":26,"fechaFin":"2028-10-12","inicioRenta":"2025-10-12","descripcion":"Enclave residencial boutique en Monte Rojo, Samaná, con vistas panorámicas a la bahía. Condominios, villas, wellness y coworking con el 80% de áreas verdes. Apreciación inmobiliaria del 15–20% desde 2022. Rendimientos trimestrales más plusvalía final.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/SAM-1/docs-es/1756104695025_dossier_comercial_samana_1_esp.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/SAM-1/docs-es/1756110958120_whitepaper_samana_1_esp.pdf","rentAlquiler":{"Reentel":0.08789302326,"ReentelPro":0.08789302326,"SuperReentel":0.08789302326},"plusvalia":{"Reentel":0.15,"ReentelPro":0.21,"SuperReentel":0.3}},{"id":"SAM-2","nombre":"Samaná 2","estado":"EN EXPLOTACIÓN","ubicacion":"República Dominicana","tipologiaExplotacion":"Préstamo promotor","tipologiaDividendos":"rendimientos trimestrales + final","pxEmision":100.0,"divisa":"$","mesesRestantes":26,"fechaFin":"2028-10-12","inicioRenta":"2025-10-12","descripcion":"Enclave residencial boutique en Monte Rojo, Samaná, con vistas panorámicas a la bahía. Condominios, villas, wellness y coworking con el 80% de áreas verdes. Apreciación inmobiliaria del 15–20% desde 2022. Rendimientos trimestrales más plusvalía final.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/SAM-2/docs-es/1756400000129_samana_2_sam_2_dossier_comercial.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/SAM-2/docs-es/1756399997882_ppm_sam_2.pdf","rentAlquiler":{"Reentel":0.08557953488,"ReentelPro":0.08557953488,"SuperReentel":0.08557953488},"plusvalia":{"Reentel":0.15,"ReentelPro":0.21,"SuperReentel":0.3}},{"id":"PRO-100","nombre":"Proyecto 100","estado":"EN EXPLOTACIÓN","ubicacion":"Global","tipologiaExplotacion":"Préstamo promotor","tipologiaDividendos":"rendimientos mensuales + final","pxEmision":100.0,"divisa":"$","mesesRestantes":26,"fechaFin":"2028-10-15","inicioRenta":"2025-10-28","descripcion":"","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/PRO-100/docs-es/1758289531435_esp_proyecto_100_pro_100_dossier_comercial.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/PRO-100/docs-es/1758289528513_esp_white_paper_proyecto_100.pdf","rentAlquiler":{"Reentel":0.08936611765,"ReentelPro":0.08936611765,"SuperReentel":0.08936611765},"plusvalia":{"Reentel":0.105,"ReentelPro":0.168,"SuperReentel":0.282}},{"id":"RET-1","nombre":"Rentas 1","estado":"EN EXPLOTACIÓN","ubicacion":"Global","tipologiaExplotacion":"Préstamo promotor","tipologiaDividendos":"rendimientos mensuales","pxEmision":100.0,"divisa":"€","mesesRestantes":28,"fechaFin":"2028-12-25","inicioRenta":"2025-11-23","descripcion":"Cartera global diversificada en España, México, EE.UU., Rep. Dominicana, EAU y Argentina. Préstamo colateralizable con pagos mensuales de rentas estables y devolución íntegra del capital al vencimiento.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/RET-1/docs-es/1759913045539_rentas_1_ret_1_dossier_comercial.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/RET-1/docs-es/1759913042418_esp_whitelist_rentas_1.pdf","rentAlquiler":{"Reentel":0.1206486486,"ReentelPro":0.1206486486,"SuperReentel":0.1206486486},"plusvalia":{"Reentel":0,"ReentelPro":0,"SuperReentel":0}},{"id":"OPO-1","nombre":"Opportunity 1","estado":"EN EXPLOTACIÓN","ubicacion":"Global","tipologiaExplotacion":"Préstamo promotor","tipologiaDividendos":"rendimientos mensuales + final","pxEmision":100.0,"divisa":"€","mesesRestantes":12,"fechaFin":"2027-08-14","inicioRenta":"2025-12-12","descripcion":"Oportunidad exclusiva de inversión sobre activos distressed en España y mercados globales. Pagos mensuales desde el mes 3. Acceso a operaciones de alta complejidad normalmente reservadas a inversores especializados.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/OPO-1/docs-es/1761305941951_opo_1_dossier_comercial.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/OPO-1/docs-es/1761222726278_whitepaper_opo_1_esp.pdf","rentAlquiler":{"Reentel":0.08077122606,"ReentelPro":0.08077122606,"SuperReentel":0.08077122606},"plusvalia":{"Reentel":0.085,"ReentelPro":0.115,"SuperReentel":0.16}},{"id":"CMY-1","nombre":"Costa Maya 1","estado":"EN EXPLOTACIÓN","ubicacion":"México","tipologiaExplotacion":"Préstamo promotor","tipologiaDividendos":"rendimientos mensuales","pxEmision":100.0,"divisa":"$","mesesRestantes":30,"fechaFin":"2029-02-02","inicioRenta":"2026-01-02","descripcion":"Masterplan agro-ecoturístico en Costa Maya, Quintana Roo. Modelo de renta fija con pagos mensuales desde los 45 días del cierre. Préstamo de 1.500.000 USD con colateral inmobiliario.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/CMY-1/docs-es/1762878809348_costa_maya_1_cmy_1_dossier_comercial.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/CMY-1/docs-es/1762772893001_whitepaper_cmy_1_esp.pdf","rentAlquiler":{"Reentel":0.1085156757,"ReentelPro":0.1183791892,"SuperReentel":0.1381110811},"plusvalia":{"Reentel":0,"ReentelPro":0,"SuperReentel":0}},{"id":"ABD-1","nombre":"Abu Dhabi 1","estado":"EN REFORMA","ubicacion":"Emiratos Árabes","tipologiaExplotacion":"Compra + alquiler + venta","tipologiaDividendos":"rendimientos mensuales + final","pxEmision":100.0,"divisa":"$","mesesRestantes":32,"fechaFin":"2029-04-10","inicioRenta":"2026-01-23","descripcion":"7 unidades en Yas Island, Abu Dhabi, junto al circuito de F1 y parques temáticos. Alquiler vacacional con licencia turística más plusvalía final. Rentas mensuales más plusvalía a la desinversión.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/ABD-1/docs-es/1765437403388_dossier_comercial_abd_1.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/ABD-1/docs-es/1765437400237_whitepaper_abd_1_esp.pdf","rentAlquiler":{"Reentel":0.08,"ReentelPro":0.08,"SuperReentel":0.08},"plusvalia":{"Reentel":0.12,"ReentelPro":0.165,"SuperReentel":0.255}},{"id":"MAD-4","nombre":"Madrid 4","estado":"EN REFORMA","ubicacion":"España","tipologiaExplotacion":"Flipping","tipologiaDividendos":"rendimientos a final del proyecto","pxEmision":100.0,"divisa":"€","mesesRestantes":6,"fechaFin":"2027-01-31","inicioRenta":"2026-01-18","descripcion":"Oportunidad prime de inversión inmobiliaria en Madrid, España. Transformación de local comercial en aproximadamente 70 trasteros urbanos en Chamartín, sector con alta resiliencia y demanda creciente. Flipping a 12 meses sin rendimientos mensuales; plusvalía íntegra al vencimiento.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/MAD-4/docs-es/1765797016349_madrid_4_mad_4_dossier_comercial.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/MAD-4/docs-es/1765796827260_whitepaper_madrid_4_esp.pdf","rentAlquiler":{"Reentel":0,"ReentelPro":0,"SuperReentel":0},"plusvalia":{"Reentel":0.1,"ReentelPro":0.12,"SuperReentel":0.15}},{"id":"CME-1","nombre":"Costa Mediterránea 1","estado":"EN REFORMA","ubicacion":"España","tipologiaExplotacion":"Flipping","tipologiaDividendos":"rendimientos a final del proyecto","pxEmision":100.0,"divisa":"€","mesesRestantes":14,"fechaFin":"2027-10-05","inicioRenta":"2026-02-12","descripcion":"Oportunidad de inversión enfocada a la reactivación y puesta en valor de un activo residencial existente en Garrucha, Almería. El activo presenta un grado de ejecución avanzado en torno al 50% según el planteamiento operativo, lo que reduce el riesgo de arranque y permite concentrar el capital preparar el proyecto para su monetización en una fase posterior. El proyecto plantea crear un conjunto residencial orientadas a familias y profesionales, así como a estancias temporales. Esta estrategia combina enfoque social y mercado, maximizando la absorción potencial y el valor final del activo.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/CME-1/docs-es/1768229493762_cme_1_dossier_comercial.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/CME-1/docs-es/1767084071596_cme_1_whitepaper_esp.pdf","rentAlquiler":{"Reentel":0,"ReentelPro":0,"SuperReentel":0},"plusvalia":{"Reentel":0.2381,"ReentelPro":0.2581,"SuperReentel":0.2881}},{"id":"RET-2","nombre":"Rentas 2","estado":"EN EXPLOTACIÓN","ubicacion":"Global","tipologiaExplotacion":"Préstamo promotor","tipologiaDividendos":"rendimientos mensuales","pxEmision":100.0,"divisa":"€","mesesRestantes":33,"fechaFin":"2029-05-11","inicioRenta":"2026-03-14","descripcion":"Cartera global diversificada en España, México, Rep. Dominicana y EAU. Préstamos e instrumentos respaldados por activos inmobiliarios con pagos mensuales desde los 45 días del cierre.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/RET-2/docs-es/1770289006436_dossier_comercial_ret_2.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/RET-2/docs-es/1770289002704_whitepaper_ret_2_esp.pdf","rentAlquiler":{"Reentel":0.12000316,"ReentelPro":0.12000316,"SuperReentel":0.12000316},"plusvalia":{"Reentel":0,"ReentelPro":0,"SuperReentel":0}},{"id":"GRX-4","nombre":"Granada 4","estado":"EN REFORMA","ubicacion":"España","tipologiaExplotacion":"Préstamo promotor","tipologiaDividendos":"rendimientos a final del proyecto","pxEmision":100.0,"divisa":"€","mesesRestantes":10,"fechaFin":"2027-06-03","inicioRenta":"2026-04-02","descripcion":"Exclusiva propuesta de obra nueva en La Zubia, a los pies de Sierra Nevada con conexión inmediata a Granada. 35 viviendas de 1 y 2 dormitorios en mercado con escasa oferta y demanda creciente de primera residencia. Sin rendimientos mensuales; capital y rendimientos íntegramente al final.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/GRX-4/docs-es/1772109371101_granada_4_dossier_comercial.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/GRX-4/docs-es/1772109364139_whitepaper_grx_4_espanol.pdf","rentAlquiler":{"Reentel":0,"ReentelPro":0,"SuperReentel":0},"plusvalia":{"Reentel":0.11,"ReentelPro":0.14,"SuperReentel":0.17}},{"id":"LVT-2","nombre":"Levante 2","estado":"EN REFORMA","ubicacion":"España","tipologiaExplotacion":"Flipping","tipologiaDividendos":"rendimientos a final del proyecto","pxEmision":100.0,"divisa":"€","mesesRestantes":15,"fechaFin":"2027-11-28","inicioRenta":"2026-04-12","descripcion":"Oportunidad de inversión en obra nueva residencial en Almenara, Castellón, bien conectado a Valencia. Déficit estructural de más de 19.000 unidades en la región. Modelo de construcción y venta con plusvalía íntegra al vencimiento.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/LVT-2/docs-es/1772859866537_lvt_2_dossier_comercial.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/LVT-2/docs-es/1772718736817_lvt_2_whitepaper_esp.pdf","rentAlquiler":{"Reentel":0,"ReentelPro":0,"SuperReentel":0},"plusvalia":{"Reentel":0.195,"ReentelPro":0.24,"SuperReentel":0.3}},{"id":"SLA-4","nombre":"Salta 4","estado":"EN EXPLOTACIÓN","ubicacion":"Argentina","tipologiaExplotacion":"Préstamo promotor","tipologiaDividendos":"rendimientos a final del proyecto","pxEmision":100.0,"divisa":"$","mesesRestantes":7,"fechaFin":"2027-03-16","inicioRenta":"2026-05-14","descripcion":"Inversión inmobiliaria en Argentina. Planta corporativa de 721 m² en el WAD Center de Salta, en pleno auge de la actividad minera del litio. Préstamo bullet con garantía inmobiliaria específica y devolución única al vencimiento.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/SLA-4/docs-es/1774862672179_dossier_comercial_sla_4.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/SLA-4/docs-es/1774862667469_white_paper_sla_4_esp.pdf","rentAlquiler":{"Reentel":0,"ReentelPro":0,"SuperReentel":0},"plusvalia":{"Reentel":0.1083,"ReentelPro":0.1333,"SuperReentel":0.15}},{"id":"MAD-5","nombre":"Madrid 5","estado":"EN REFORMA","ubicacion":"España","tipologiaExplotacion":"Flipping","tipologiaDividendos":"rendimientos a final del proyecto","pxEmision":100.0,"divisa":"€","mesesRestantes":9,"fechaFin":"2027-05-09","inicioRenta":"2026-05-08","descripcion":"Oportunidad prime de inversión inmobiliaria en Madrid Río. Reconversión de 1.531 m² en 8 estudios y entre 200 y 215 trasteros. Zona con metro, parque fluvial y centro comercial. Flipping sin rendimientos mensuales; plusvalía íntegra al vencimiento.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/MAD-5/docs-es/1776944815386_mad_5_dossier_comercial.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/MAD-5/docs-es/1776944806401_whitepaper_madrid_5_esp.pdf","rentAlquiler":{"Reentel":0,"ReentelPro":0,"SuperReentel":0},"plusvalia":{"Reentel":0.11,"ReentelPro":0.13,"SuperReentel":0.16}},{"id":"OPO-2","nombre":"Opportunity 2","estado":"EN EXPLOTACIÓN","ubicacion":"Global","tipologiaExplotacion":"Préstamo promotor","tipologiaDividendos":"rendimientos mensuales + final","pxEmision":100.0,"divisa":"€","mesesRestantes":22,"fechaFin":"2028-06-20","inicioRenta":"2026-05-13","descripcion":"Oportunidad exclusiva de inversión sobre activos distressed en España y mercados globales. Pagos mensuales desde el mes 3. Acceso a operaciones de alta complejidad normalmente reservadas a inversores especializados.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/OPO-2/docs-es/1777304826816_opo_2_dossier_comercial.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/OPO-2/docs-es/1778501619089_opo_2_whitepaper_esp.pdf","rentAlquiler":{"Reentel":0,"ReentelPro":0,"SuperReentel":0},"plusvalia":{"Reentel":0.04,"ReentelPro":0.08,"SuperReentel":0.14}},{"id":"MAD-6","nombre":"Madrid 6","estado":"EN REFORMA","ubicacion":"España","tipologiaExplotacion":"Flipping","tipologiaDividendos":"rendimientos a final del proyecto","pxEmision":100.0,"divisa":"€","mesesRestantes":9,"fechaFin":"2027-05-17","inicioRenta":"2026-05-15","descripcion":"Oportunidad prime de inversión en el área metropolitana de Madrid. Reconversión de 700 m² en 8 viviendas modernas con gimnasio y coworking en Navalcarnero. Alta demanda de familias y jóvenes frente a los precios tensionados de Madrid capital. Flipping disponible en FIAT y cripto USDT.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/MAD-6/docs-es/1777462983979_madrid_6_mad_6_dossier_comercial.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/MAD-6/docs-es/1778227232028_mad_6_whitepaper_esp.pdf","rentAlquiler":{"Reentel":0,"ReentelPro":0,"SuperReentel":0},"plusvalia":{"Reentel":0.11,"ReentelPro":0.13,"SuperReentel":0.16}},{"id":"SAT-1","nombre":"San Antonio 1","estado":"EN EXPLOTACIÓN","ubicacion":"USA","tipologiaExplotacion":"Compra + alquiler + venta","tipologiaDividendos":"rendimientos trimestrales + final","pxEmision":100.0,"divisa":"$","mesesRestantes":47,"fechaFin":"2030-07-01","inicioRenta":"2026-07-01","descripcion":"Oportunidad estratégica de inversión en el sector hospitality norteamericano bajo la bandera de una marca de prestigio mundial. Este proyecto se centra en la adquisición y reposicionamiento de un hotel Double Tree by Hilton para maximizar su valor y generar rentas trimestrales estables.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/SAT-1/docs-es/1778832022127_sat_1_dossier_comercial.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/SAT-1/docs-es/1779104887696_whitepaper_san_antonio_1_esp.pdf","rentAlquiler":{"Reentel":0,"ReentelPro":0,"SuperReentel":0},"plusvalia":{"Reentel":0.28,"ReentelPro":0.4,"SuperReentel":0.52}},{"id":"NCA-1","nombre":"Carolina del Norte 1","estado":"EN CONSTRUCCIÓN","ubicacion":"USA","tipologiaExplotacion":"Flipping","tipologiaDividendos":"rendimientos a final del proyecto","pxEmision":100.0,"divisa":"$","mesesRestantes":35,"fechaFin":"2029-07-17","inicioRenta":"2026-06-10","descripcion":"The Camber es un desarrollo multifamily Class-A de 332 unidades en Morrisville (Raleigh-Durham), en el corazón del Research Triangle, uno de los principales hubs tech y life science de EE.UU. Con ~$97M de inversión, obra iniciada en 2026 y entrega prevista en 2027, el proyecto capta la demanda residencial de profesionales atraídos por Apple, Google o Fujifilm.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/NCA-1/docs-es/1779734129838_nca_1_dossier_comercial.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/NCA-1/docs-es/1779783840274_nca_1_whitepaper.pdf","rentAlquiler":{"Reentel":0,"ReentelPro":0,"SuperReentel":0},"plusvalia":{"Reentel":0.36,"ReentelPro":0.45,"SuperReentel":0.51}},{"id":"CMY-2","nombre":"Costa Maya 2","estado":"EN EXPLOTACIÓN","ubicacion":"México","tipologiaExplotacion":"Préstamo promotor","tipologiaDividendos":"rendimientos mensuales","pxEmision":100.0,"divisa":"$","mesesRestantes":34,"fechaFin":"2029-06-16","inicioRenta":"2026-06-10","descripcion":"Masterplan agro-ecoturístico en Costa Maya, Quintana Roo. Modelo de renta fija con pagos mensuales desde los 45 días del cierre. Préstamo de 1.500.000 USD con colateral inmobiliario.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/CMY-2/docs-es/1779733528067_cmy_2_dossier_comercial.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/CMY-2/docs-es/1779787773620_cmy_2_whitepaper_esp.pdf","rentAlquiler":{"Reentel":0,"ReentelPro":0,"SuperReentel":0},"plusvalia":{"Reentel":0,"ReentelPro":0,"SuperReentel":0}},{"id":"SAT-2","nombre":"San Antonio 2","estado":"EN REFORMA","ubicacion":"USA","tipologiaExplotacion":"Compra + alquiler + venta","tipologiaDividendos":"rendimientos trimestrales + final","pxEmision":100.0,"divisa":"$","mesesRestantes":47,"fechaFin":"2030-07-01","inicioRenta":"2026-07-01","descripcion":"Oportunidad estratégica de inversión en el sector hospitality norteamericano bajo la bandera de una marca de prestigio mundial. Este proyecto se centra en la adquisición y reposicionamiento de un hotel Double Tree by Hilton para maximizar su valor y generar rentas trimestrales estables.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/SAT-2/docs-es/1780060196856_sat_2_dossier_comercial.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/SAT-2/docs-es/1780055114507_sat_2_whitepaper_esp.pdf","rentAlquiler":{"Reentel":0.07,"ReentelPro":0.07,"SuperReentel":0.07},"plusvalia":{"Reentel":0.28,"ReentelPro":0.4,"SuperReentel":0.52}},{"id":"RET-3","nombre":"Rentas 3","estado":"FINANCIÁNDOSE","ubicacion":"Global","tipologiaExplotacion":"Préstamo promotor","tipologiaDividendos":"rendimientos mensuales","pxEmision":100.0,"divisa":"$","mesesRestantes":34,"fechaFin":"2029-06-25","inicioRenta":"2026-06-25","descripcion":"Rentas 3 (RET-3) es una oportunidad de inversión en una cartera global que combina préstamos y activos inmobiliarios destinados a la construcción, alquiler y venta.\nAlcance global: Inversión diversificada en mercados consolidados por Reental: España, México, Estados Unidos, República Dominicana, Emiratos Árabes Unidos y Argentina.\nRendimiento mensual: Pagos periódicos mensuales (cupón equivalente al 12% medio anual estimado) que comienzan a distribuirse 30 días después de la apertura de la cuenta del proyecto.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/RET-3/docs-es/1781076650098_ret_3_dossier_comercial.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/RET-3/docs-es/1781059796248_ret_3_whitepaper.pdf","rentAlquiler":{"Reentel":0.12,"ReentelPro":0.12,"SuperReentel":0.12},"plusvalia":{"Reentel":0,"ReentelPro":0,"SuperReentel":0}},{"id":"MIA-4","nombre":"Miami 4","estado":"EN REFORMA","ubicacion":"USA","tipologiaExplotacion":"Flipping","tipologiaDividendos":"rendimientos a final del proyecto","pxEmision":100.0,"divisa":"$","mesesRestantes":11,"fechaFin":"2027-07-04","inicioRenta":"2026-07-02","descripcion":"El activo consiste en la adquisición y reposicionamiento de una vivienda unifamiliar ubicada\nen 9870 SW 96th St, Miami, FL 33176, dentro del área residencial de Kendall Ranches /\nKillian Palms Country Club, una de las zonas más consolidadas y demandadas del mercado\nresidencial del sur de Miami para vivienda unifamiliar de alta gama.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/MIA-4/docs-es/1781614913309_mia_4_dossier_comercial.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/MIA-4/docs-es/1781615021820_mia_4_whitepaper_esp.pdf","rentAlquiler":{"Reentel":0,"ReentelPro":0,"SuperReentel":0},"plusvalia":{"Reentel":0.11,"ReentelPro":0.13,"SuperReentel":0.16}},{"id":"VLC-14","nombre":"Valencia 14","estado":"EN REFORMA","ubicacion":"España","tipologiaExplotacion":"Flipping","tipologiaDividendos":"rendimientos a final del proyecto","pxEmision":100.0,"divisa":"€","mesesRestantes":17,"fechaFin":"2028-01-20","inicioRenta":"2026-07-10","descripcion":"Reental lanza Valencia 14 | VLC-14: Invierte en una promoción de Obra Nueva Premium en la costa del Mediterráneo. Participa en un proyecto inmobiliario de nueva construcción situado en la prestigiosa Avenida Primado Reig, Valencia. El proyecto abarca la demolición del activo actual para desarrollar un edificio residencial de nueva construcción con 98 modernas viviendas.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/VLC-14/docs-es/1782307211806_vlc_14_dossier_comercial.pdf","whitepaper":"https://d23t4e7dm0xzj0.cloudfront.net/VLC-14/docs-es/1782301723034_vlc_14_whitepaper.pdf","rentAlquiler":{"Reentel":0,"ReentelPro":0,"SuperReentel":0},"plusvalia":{"Reentel":0.165,"ReentelPro":0.195,"SuperReentel":0.24}},{"id":"MIA-5","nombre":"Miami 5","estado":"EN REFORMA","ubicacion":"USA","tipologiaExplotacion":"Flipping","tipologiaDividendos":"rendimientos a final del proyecto","pxEmision":100.0,"divisa":"$","mesesRestantes":18,"fechaFin":"2028-02-09","inicioRenta":"2026-07-28","descripcion":"El proyecto Miami 5 (MIA-5) consiste en la adquisición, reforma integral y posterior venta (reposicionamiento value-add) de una vivienda unifamiliar de alta gama situada en la exclusiva zona residencial de Kendall Ranches, junto al Killian Palms Country Club, en Miami, Estados Unidos.","dossier":"https://d23t4e7dm0xzj0.cloudfront.net/MIA-5/docs-es/1783353176360_mia_5_dossier_comercial.pdf","whitepaper":"","rentAlquiler":{"Reentel":0,"ReentelPro":0,"SuperReentel":0},"plusvalia":{"Reentel":0.165,"ReentelPro":0.195,"SuperReentel":0.24}},{"id":"CAR-1","nombre":"Caribe 1","estado":"PRELANZAMIENTO","ubicacion":"México","tipologiaExplotacion":"Préstamo promotor","tipologiaDividendos":"rendimientos mensuales","pxEmision":100.0,"divisa":"$","mesesRestantes":30,"fechaFin":"2029-01-30","inicioRenta":"2026-08-14","descripcion":"","dossier":"","whitepaper":"","rentAlquiler":{"Reentel":0.1,"ReentelPro":0.11,"SuperReentel":0.13},"plusvalia":{"Reentel":0,"ReentelPro":0,"SuperReentel":0}},{"id":"CAR-2","nombre":"Caribe 2","estado":"PRELANZAMIENTO","ubicacion":"México","tipologiaExplotacion":"Flipping","tipologiaDividendos":"rendimientos a final del proyecto","pxEmision":100.0,"divisa":"$","mesesRestantes":30,"fechaFin":"2029-01-30","inicioRenta":"2026-08-14","descripcion":"","dossier":"","whitepaper":"","rentAlquiler":{"Reentel":0,"ReentelPro":0,"SuperReentel":0},"plusvalia":{"Reentel":0.275,"ReentelPro":0.325,"SuperReentel":0.45}}];
+
+const REINVERSION = { Reentel:0.11, ReentelPro:0.13, SuperReentel:0.16 };
+const STAKING = 0.046;
+const HORIZONTES = [6,12,24,36,60];
+
+/* ===================== MOTOR ===================== */
+const suma = a => a.reduce((x,y)=>x+y,0);
+
+function calcularInmueble(inm,{tokens,pxPagado,estatus,fx}){
+  const px = pxPagado ?? inm.pxEmision, bruto = tokens*px;
+  const importeEUR = inm.divisa==='€' ? bruto : bruto/fx;
+  const importeUSD = inm.divisa==='$' ? bruto : bruto*fx;
+  const rentAlquilerAj = (inm.rentAlquiler[estatus]||0)*(inm.pxEmision/px);
+  const plusvaliaAj = (inm.pxEmision*(1+(inm.plusvalia[estatus]||0))-px)/px;
+  const rentTotal = rentAlquilerAj/12*inm.mesesRestantes + plusvaliaAj;
+  const rentAnualizada = inm.mesesRestantes>0 ? rentTotal*12/inm.mesesRestantes : 0;
+  return {...inm,tokens,pxPagado:px,importeEUR,importeUSD,rentAlquilerAj,plusvaliaAj,
+    rentTotal,rentAnualizada,
+    rentaMensualEUR:importeEUR*rentAlquilerAj/12, plusvaliaEUR:importeEUR*plusvaliaAj};
+}
+
+function reparto(items,pesos,campo,porPeso){
+  const out={};
+  items.forEach((i,k)=>{ const c=i[campo]||'Otros'; out[c]=(out[c]||0)+(porPeso?pesos[k]:1/items.length); });
+  return out;
+}
+
+function calcularCartera(items,{fx,costeEstatusEUR=0}){
+  const totalTokens = suma(items.map(i=>i.tokens));
+  const pesos = items.map(i=> totalTokens ? i.tokens/totalTokens : 0);
+  const invEUR = suma(items.map(i=>i.importeEUR)), invUSD = suma(items.map(i=>i.importeUSD));
+  const enEUR = suma(items.filter(i=>i.divisa==='€').map(i=>i.importeEUR));
+  const pond = c => suma(items.map((i,k)=>i[c]*pesos[k]));
+  const baseAlq = suma(items.filter(i=>i.rentAlquilerAj!==0).map(i=>i.importeEUR));
+  const baseFin = suma(items.filter(i=>i.plusvaliaAj!==0).map(i=>i.importeEUR));
+  const explot = items.filter(i=>String(i.estado).toUpperCase().includes('EXPLOT'));
+  const divExplot = {};
+  explot.forEach(i=>{ const c=i.tipologiaDividendos||'Otros'; divExplot[c]=(divExplot[c]||0)+1/explot.length; });
+  return {items,pesos,
+    nInmuebles: items.filter(i=>i.tokens>0).length,
+    totalTokens,
+    mediaMeses: suma(items.map((i,k)=>i.mesesRestantes*pesos[k])),
+    invEUR, invUSD,
+    pctEUR: invEUR ? enEUR/invEUR : 0,
+    pctUSD: invEUR ? 1-enEUR/invEUR : 0,
+    rentAlquiler: pond('rentAlquilerAj'),
+    plusvalia: pond('plusvaliaAj'),
+    rentTotal: pond('rentTotal'),
+    rentAnualizada: pond('rentAnualizada'),
+    soloAlquiler: baseAlq ? suma(items.filter(i=>i.rentAlquilerAj!==0).map(i=>i.rentAlquilerAj*(i.importeEUR/baseAlq))) : 0,
+    soloFinal: baseFin ? suma(items.filter(i=>i.plusvaliaAj!==0).map(i=>i.plusvaliaAj*(i.importeEUR/baseFin))) : 0,
+    costeEstatusEUR, costeEstatusUSD: costeEstatusEUR*fx,
+    totalEUR: invEUR+costeEstatusEUR, totalUSD: invUSD+costeEstatusEUR*fx,
+    // región y tipología de dividendos van ponderadas por cartera;
+    // explotación y dividendos-en-explotación, por número de inmuebles.
+    distRegion: reparto(items,pesos,'ubicacion',true),
+    distDividendos: reparto(items,pesos,'tipologiaDividendos',true),
+    distExplotacion: reparto(items,pesos,'tipologiaExplotacion',false),
+    distDivExplotacion: divExplot,
+    distEstado: reparto(items,pesos,'estado',false)};
+}
+
+const factorRenta = (im,n)=> n<=0 ? 0 : (im===0 ? n : (Math.pow(1+im,n)-1)/im);
+
+function calcularReinversion(cartera,{tasaReinversionAnual,tasaStakingAnual=0,valorEstatusEUR=0}){
+  const im = tasaReinversionAnual/12, capital = cartera.invEUR;
+  return HORIZONTES.map(H=>{
+    let vf = capital;
+    cartera.items.forEach(i=>{
+      const T = i.mesesRestantes;
+      vf += i.rentaMensualEUR*factorRenta(im,Math.min(H,T));
+      if(H>=T) vf += i.plusvaliaEUR*Math.pow(1+im,H-T);
+      if(H>T)  vf += i.importeEUR*(Math.pow(1+im,H-T)-1);
+    });
+    const ganancia = vf-capital, staking = tasaStakingAnual*valorEstatusEUR/12*H;
+    const den = capital+valorEstatusEUR;
+    return {horizonte:H,capital,valorFinal:vf,ganancia,
+      rentAcumulada: capital ? ganancia/capital : 0, staking,
+      gananciaConStaking: ganancia+staking,
+      rentAcumuladaConStaking: den ? (ganancia+staking)/den : 0};
+  });
+}
+
+const EXCLUIDOS = ['CERRADO','NO LANZADO'];
+
+function seleccionar(universo,{objetivo,mercados=[],estatus,minMeses=6}){
+  const nominal = p => {
+    const a = p.rentAlquiler[estatus]||0, pl = p.plusvalia[estatus]||0;
+    const t = a/12*p.mesesRestantes + pl;
+    return {alquiler:a,plusvalia:pl,total:t,anualizada: p.mesesRestantes>0 ? t*12/p.mesesRestantes : 0};
+  };
+  let c = universo
+    .filter(p=>!EXCLUIDOS.includes(String(p.estado).toUpperCase()))
+    .filter(p=> mercados.length ? mercados.includes(p.ubicacion) : true)
+    .filter(p=> Number.isFinite(p.mesesRestantes) && p.mesesRestantes>=minMeses)
+    .map(p=>({...p,_m:nominal(p)}));
+  if(objetivo==='recurrente'){ c = c.filter(p=>p._m.alquiler!==0); c.sort((a,b)=>b._m.alquiler-a._m.alquiler); }
+  else if(objetivo==='final'){ c = c.filter(p=>p._m.alquiler===0 && p._m.plusvalia!==0); c.sort((a,b)=>b._m.plusvalia-a._m.plusvalia); }
+  else { c.sort((a,b)=>b._m.anualizada-a._m.anualizada); }
+  return c;
+}
+
+function repartir(candidatos,importeEUR,{fx,maxProyectos=5}){
+  let lista = candidatos.slice(0,Math.max(0,maxProyectos));
+  while(lista.length>0){
+    const porProy = importeEUR/lista.length;
+    const conT = lista.map(p=>{
+      const coste = p.divisa==='€' ? p.pxEmision : p.pxEmision/fx;
+      return {p,coste,tokens:Math.floor(porProy/coste)};
+    });
+    const viables = conT.filter(x=>x.tokens>0);
+    if(viables.length===lista.length)
+      return {seleccion:viables.map(x=>({proyecto:x.p,tokens:x.tokens})),
+        noAsignadoEUR: importeEUR - suma(viables.map(x=>x.tokens*x.coste))};
+    lista = viables.map(x=>x.p);
+  }
+  return {seleccion:[],noAsignadoEUR:importeEUR};
+}
+
+function simular(universo,o){
+  const importeInm = o.modoImporte==='total' ? o.importe-o.costeEstatusEUR : o.importe;
+  if(importeInm<=0) return {error:'El coste del estatus se lleva todo el importe. Sube el importe o baja el coste del estatus.'};
+  const cand = seleccionar(universo,o);
+  if(!cand.length) return {error:'Ningún proyecto disponible encaja con esa combinación. Prueba a añadir mercados o a cambiar el objetivo.'};
+  const {seleccion,noAsignadoEUR} = repartir(cand,importeInm,{fx:o.fx,maxProyectos:o.maxProyectos});
+  if(!seleccion.length) return {error:'El importe no llega para comprar ni un token. El mínimo es unos 100 € por proyecto.'};
+  const mk = est => calcularCartera(
+    seleccion.map(({proyecto,tokens})=>calcularInmueble(proyecto,{tokens,pxPagado:proyecto.pxEmision,estatus:est,fx:o.fx})),
+    {fx:o.fx,costeEstatusEUR: est==='Reentel' ? 0 : o.costeEstatusEUR});
+  const cProp = mk(o.estatus), cBase = mk('Reentel');
+  return {cBase,cProp,noAsignadoEUR,disponibles:cand.length,
+    rBase: calcularReinversion(cBase,{tasaReinversionAnual:REINVERSION.Reentel}),
+    rProp: calcularReinversion(cProp,{tasaReinversionAnual:REINVERSION[o.estatus],
+      tasaStakingAnual:STAKING,valorEstatusEUR:o.costeEstatusEUR})};
+}
+
+/* ===================== FORMATO =====================
+   Formateador propio: toLocaleString('es-ES') omite el separador de miles
+   en números de 4 cifras (1652,37 en lugar de 1.652,37), lo que hacía que
+   las tablas de reinversión y de inmuebles no coincidieran. */
+function nf(n){
+  if(!isFinite(n)) n = 0;
+  const p = Math.abs(n).toFixed(2).split('.');
+  return (n<0?'-':'') + p[0].replace(/\B(?=(\d{3})+(?!\d))/g,'.') + ',' + p[1];
+}
+const eur = n => nf(n)+' €';
+const usd = n => '$'+nf(n);
+const pct = n => nf((isFinite(n)?n:0)*100)+'%';
+const esc = s => String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const MESES = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+function fecha(iso){
+  if(!iso) return '—';
+  const d = new Date(iso+'T00:00:00');
+  return isNaN(d) ? '—' : MESES[d.getMonth()]+' '+d.getFullYear();
+}
+function tag(e){
+  const s=String(e).toUpperCase();
+  const c = s.includes('EXPLOT')?'tex': s.includes('REFORM')?'trfm': s.includes('CONST')?'tcns':
+            s.includes('PRELA')?'tpre': s.includes('FINAN')?'tfin':'trfm';
+  return '<span class="tag '+c+'">'+esc(s)+'</span>';
+}
+function barras(dist,clase,sufijoConteo){
+  const ent = Object.entries(dist).filter(([,v])=>v>0).sort((a,b)=>b[1]-a[1]);
+  if(!ent.length) return '<p class="nota">Sin datos.</p>';
+  const max = Math.max(...ent.map(e=>e[1]));
+  return ent.map(([k,v])=>{
+    const ancho = Math.max(8, Math.round(v/max*100));
+    const txt = sufijoConteo ? sufijoConteo(k,v) : nf(v*100)+'%';
+    return '<div class="bar-row"><div class="bar-nm" title="'+esc(k)+'">'+esc(k)+'</div>'
+      +'<div class="bar-track"><div class="bf '+clase+'" style="width:'+ancho+'%">'+esc(txt)+'</div></div></div>';
+  }).join('');
+}
+
+/* ===================== INTERFAZ ===================== */
+const mercadosDisponibles = [...new Set(DATOS.map(p=>p.ubicacion))].sort((a,b)=>a.localeCompare(b,'es'));
+document.getElementById('mercados').innerHTML = mercadosDisponibles.map(m=>
+  '<label class="chip"><input type="checkbox" value="'+esc(m)+'">'+esc(m)
+  +' <b>'+DATOS.filter(p=>p.ubicacion===m).length+'</b></label>').join('');
+
+function leer(){
+  return {
+    objetivo: document.querySelector('input[name=objetivo]:checked').value,
+    mercados: [...document.querySelectorAll('#mercados input:checked')].map(i=>i.value),
+    estatus: document.querySelector('input[name=estatus]:checked').value,
+    modoImporte: document.querySelector('input[name=modo]:checked').value,
+    importe: +document.getElementById('importe').value || 0,
+    costeEstatusEUR: +document.getElementById('estatusEur').value || 0,
+    maxProyectos: +document.getElementById('maxProy').value || 5,
+    fx: +document.getElementById('fx').value || 1.14535,
+  };
+}
+
+function bloqueResumen(r,est){
+  const {cBase,cProp} = r;
+  const divisa = `
+    <div class="box" style="margin-bottom:12px">
+      <div class="sub">% de cartera según divisa del proyecto</div>
+      <div class="bar-row" style="margin-bottom:0">
+        <div class="bar-nm">${cProp.nInmuebles} inmuebles</div>
+        <div class="bar-track">
+          ${cProp.pctUSD>0?`<div class="bf navy" style="width:${cProp.pctUSD*100}%">${nf(cProp.pctUSD*100)}% ($)</div>`:''}
+          ${cProp.pctEUR>0?`<div class="bf gold" style="width:${cProp.pctEUR*100}%">${nf(cProp.pctEUR*100)}% (€)</div>`:''}
+        </div>
+      </div>
+    </div>`;
+
+  const col = (c,cls,titulo,badge) => `
+    <div class="box"><div class="badge ${badge}">${titulo}</div>
+      <div class="linea"><span>Rentabilidad anualizada (incl. ingresos recurrentes + rentabilidad final)</span><b class="${cls}">${pct(c.rentAnualizada)}</b></div>
+      <div class="linea"><span>Rentabilidad total cartera</span><b class="${cls}">${pct(c.rentTotal)}</b></div>
+      <div class="linea"><span>Rent. anualizada ingresos recurrentes*</span><b class="${cls}">${pct(c.rentAlquiler)}</b></div>
+      <div class="linea"><span>Rentabilidad final**</span><b class="${cls}">${pct(c.plusvalia)}</b></div>
+    </div>`;
+
+  return `
+    <div class="kpi-ancho"><span>Número de inmuebles propuestos en cartera</span><strong>${cProp.nInmuebles}</strong></div>
+    <div class="dos">
+      <div class="box">
+        <div class="linea"><span>Valor inversión estimada (€) en inmuebles</span><b>${eur(cProp.invEUR)}</b></div>
+        <div class="linea"><span>Adquisición de estatus</span><b>${eur(cProp.costeEstatusEUR)}</b></div>
+        <div class="linea total"><span>Valor total inversión (incl. estatus)</span><b class="oro">${eur(cProp.totalEUR)}</b></div>
+      </div>
+      <div class="box">
+        <div class="linea"><span>Valor inversión estimada ($) en inmuebles</span><b>${usd(cProp.invUSD)}</b></div>
+        <div class="linea"><span>Adquisición de estatus</span><b>${usd(cProp.costeEstatusUSD)}</b></div>
+        <div class="linea total"><span>Valor total inversión (incl. estatus)</span><b class="oro">${usd(cProp.totalUSD)}</b></div>
+      </div>
+    </div>
+    ${divisa}
+    <div class="dos">
+      ${col(cBase,'azul','Reentel (base)','base')}
+      ${col(cProp,'oro','⭐ '+esc(est)+' (propuesto)','prop')}
+    </div>
+    <div class="pies">
+      <div>* Considera la cartera completa. Solo proyectos con ingresos recurrentes: ${pct(cProp.soloAlquiler)} (${esc(est)}) vs ${pct(cBase.soloAlquiler)} (Reentel)</div>
+      <div>** Considera la cartera completa. Solo proyectos con rentabilidad final: ${pct(cProp.soloFinal)} (${esc(est)}) vs ${pct(cBase.soloFinal)} (Reentel)</div>
+    </div>
+    <div class="kpi-ancho"><span>Media de meses restantes hasta estimación de fin de los proyectos</span><strong>${Math.round(cProp.mediaMeses)}</strong></div>`;
+}
+
+function bloqueReinversion(r,est){
+  const maxG = Math.max(...r.rProp.map(x=>x.gananciaConStaking),1);
+  const grafico = HORIZONTES.map((H,k)=>`
+    <div style="margin-bottom:11px">
+      <div style="font-size:11px;color:var(--tenue);margin-bottom:3px">${H} meses</div>
+      <div class="bar-row" style="margin-bottom:3px"><div class="bar-nm">Reentel</div>
+        <div class="bar-track"><div class="bf navy" style="width:${Math.max(8,r.rBase[k].ganancia/maxG*100)}%">${eur(r.rBase[k].ganancia)}</div></div></div>
+      <div class="bar-row" style="margin-bottom:3px"><div class="bar-nm">${esc(est)}</div>
+        <div class="bar-track"><div class="bf gold" style="width:${Math.max(8,r.rProp[k].ganancia/maxG*100)}%">${eur(r.rProp[k].ganancia)}</div></div></div>
+      <div class="bar-row" style="margin-bottom:0"><div class="bar-nm">${esc(est)} + staking</div>
+        <div class="bar-track"><div class="bf green" style="width:${Math.max(8,r.rProp[k].gananciaConStaking/maxG*100)}%">${eur(r.rProp[k].gananciaConStaking)}</div></div></div>
+    </div>`).join('');
+
+  const fila = (t,serie,campo,cls,fmt) =>
+    `<tr><td class="L">${t}</td>${serie.map(x=>`<td class="${cls}">${fmt(x[campo])}</td>`).join('')}</tr>`;
+
+  return `
+    <div class="box" style="margin-bottom:12px">
+      <div class="sub">★ Ganancia total — Reentel vs ${esc(est)}</div>
+      ${grafico}
+    </div>
+    <div class="box flush"><div class="scroll"><table>
+      <thead><tr><th class="L">Escenario</th>${HORIZONTES.map(h=>'<th>'+h+' meses</th>').join('')}</tr></thead>
+      <tbody>
+        ${fila('Ganancia Reentel (€)',r.rBase,'ganancia','',eur)}
+        ${fila('Ganancia '+esc(est)+' (€) ⭐',r.rProp,'ganancia','oro',eur)}
+        ${fila('Ganancia '+esc(est)+' incl. staking (€) ⭐',r.rProp,'gananciaConStaking','verde',eur)}
+        ${fila('Rent. acumulada Reentel',r.rBase,'rentAcumulada','',pct)}
+        ${fila('Rent. acumulada '+esc(est)+' ⭐',r.rProp,'rentAcumulada','oro',pct)}
+        ${fila('Rent. acumulada '+esc(est)+' incl. staking ⭐',r.rProp,'rentAcumuladaConStaking','verde',pct)}
+      </tbody>
+    </table></div></div>`;
+}
+
+function bloqueAnalisis(c){
+  const n = c.items.length;
+  const cuenta = (k,v)=>{ const u=Math.round(v*n); return u+(u===1?' inmueble':' inmuebles')+' — '+Math.round(v*100)+'%'; };
+  return `
+    <div class="box" style="margin-bottom:12px">
+      <div class="sub">Distribución geográfica de la inversión</div>
+      ${barras(c.distRegion,'gold')}
+    </div>
+    <div class="box" style="margin-bottom:12px">
+      <div class="sub">Estado de los proyectos</div>
+      ${barras(c.distEstado,'steel',cuenta)}
+    </div>
+    <div class="dos">
+      <div class="box"><div class="sub">Tipología de dividendos</div>${barras(c.distDividendos,'gold')}</div>
+      <div class="box"><div class="sub">Tipología de explotación</div>${barras(c.distExplotacion,'navy',cuenta)}</div>
+    </div>
+    <div class="box"><div class="sub">Tipología de dividendos en explotación</div>${barras(c.distDivExplotacion,'navy')}</div>`;
+}
+
+function bloqueActivos(r,est){
+  const {cBase,cProp} = r;
+  const filas = cProp.items.map((i,k)=>{
+    const b = cBase.items[k];
+    return `<tr>
+      <td class="L"><strong>${esc(i.nombre)}</strong><br><span style="font-size:11px;color:var(--tenue)">${esc(i.id)}</span></td>
+      <td>${tag(i.estado)}</td><td class="L">${esc(i.ubicacion)}</td><td>${i.tokens}</td>
+      <td>${i.divisa==='$'?usd(i.importeUSD):eur(i.importeEUR)}</td>
+      <td>${pct(b.rentTotal)}</td><td class="oro">${pct(i.rentTotal)}</td>
+      <td>${pct(b.rentAnualizada)}</td><td class="oro">${pct(i.rentAnualizada)}</td>
+      <td>${fecha(i.fechaFin)}</td></tr>`;
+  }).join('');
+
+  const comparativa = (campo,titulo) => {
+    const orden = cProp.items.map((i,k)=>({i,b:cBase.items[k]})).sort((a,b)=>b.i[campo]-a.i[campo]);
+    const max = Math.max(...orden.map(x=>x.i[campo]),0.01);
+    return `<div class="box"><div class="sub">${titulo}</div>${orden.map(({i,b})=>{
+      const dif = i[campo]-b[campo];
+      const wb = Math.max(8, Math.round(b[campo]/max*72));
+      const wd = dif>0 ? Math.max(6, Math.round(dif/max*72)) : 0;
+      return `<div class="bar-row"><div class="bar-nm" title="${esc(i.nombre)}">${esc(i.nombre)}</div>
+        <div class="bar-track"><div class="bf navy" style="width:${wb}%">${pct(b[campo])}</div>
+        ${wd?`<div class="bf gold" style="width:${wd}%">+${pct(dif)}</div>`:''}</div></div>`;
+    }).join('')}</div>`;
+  };
+
+  return `
+    <div class="box flush" style="margin-bottom:12px"><div class="scroll"><table>
+      <thead><tr><th class="L">Nombre</th><th>Estado</th><th class="L">Ubicación</th><th>Tokens</th>
+        <th>Inversión</th><th>Rent. total Reentel</th><th>Rent. total ${esc(est)} ⭐</th>
+        <th>Rent. anual Reentel</th><th>Rent. anual ${esc(est)} ⭐</th><th>Fin est.</th></tr></thead>
+      <tbody>${filas}</tbody></table></div></div>
+    <div class="dos">
+      ${comparativa('rentTotal','Rentabilidad total — Reentel + incremento '+esc(est))}
+      ${comparativa('rentAnualizada','Rentabilidad anualizada — Reentel + incremento '+esc(est))}
+    </div>`;
+}
+
+function bloqueFichas(r,est){
+  const {cBase,cProp} = r;
+  const porRegion = {};
+  cProp.items.forEach((i,k)=>{ (porRegion[i.ubicacion||'Otros'] ||= []).push({i,b:cBase.items[k]}); });
+  return Object.entries(porRegion).map(([region,lista])=>`
+    <div class="sec-hdr"><h2>Análisis por ubicación: ${esc(region)}</h2></div>
+    ${lista.map(({i,b})=>`
+      <div class="ficha">
+        <div>
+          <h4>${esc(i.nombre)}</h4><div class="fid">${esc(i.id)}</div>
+          <div class="fi">📍 <b>${esc(i.ubicacion)}</b></div>
+          <div class="fi">🏗 <b>${esc(i.tipologiaExplotacion)}</b></div>
+          ${i.inicioRenta?`<div class="fi">📆 Inicio renta: <b>${fecha(i.inicioRenta)}</b></div>`:''}
+          <div class="fi">📅 Fin estimado: <b>${fecha(i.fechaFin)}</b></div>
+          <div class="fi">🏷 <b>${i.tokens} tokens × ${esc(i.divisa)}${nf(i.pxEmision)}</b></div>
+          <div class="fi" style="padding-left:20px">Inversión: <b>${i.divisa==='$'?usd(i.importeUSD):eur(i.importeEUR)}</b></div>
+          <div class="fi">💵 <b>${esc(i.tipologiaDividendos)}</b></div>
+          <div>${tag(i.estado)}</div>
+        </div>
+        <div>
+          <div class="fstat"><div class="l">Meses restantes</div><div class="v">${Math.round(i.mesesRestantes)} meses</div></div>
+          <div class="fstat"><div class="l">Rentabilidad total estimada</div>
+            <div style="margin-top:3px"><span class="rb rb-sr">${esc(est)}: ${pct(i.rentTotal)}</span><span class="rb rb-base">Reentel: ${pct(b.rentTotal)}</span></div>
+          </div>
+          <div class="fstat"><div class="l">Rent. anualizada (${esc(est)})</div><div class="v" style="color:var(--oro);font-size:16px">${pct(i.rentAnualizada)}</div></div>
+          <div class="fstat"><div class="l">Rent. anualizada (Reentel)</div><div class="v" style="color:var(--azul)">${pct(b.rentAnualizada)}</div></div>
+          ${i.descripcion?`<div class="fstat"><div class="l">Descripción</div><div class="desc">${esc(i.descripcion)}</div></div>`:''}
+          ${i.dossier?`<a class="enl d" href="${esc(i.dossier)}" target="_blank" rel="noopener">🔗 Dossier comercial</a>`:''}
+          ${i.whitepaper?`<a class="enl w" href="${esc(i.whitepaper)}" target="_blank" rel="noopener">🔗 Whitepaper</a>`:''}
+        </div>
+      </div>`).join('')}`).join('');
+}
+
+function pintar(r,o){
+  const out = document.getElementById('salida');
+  if(r.error){ out.innerHTML = '<div class="aviso">'+esc(r.error)+'</div>'; return; }
+  const est = o.estatus;
+  const sobra = r.noAsignadoEUR>0.005
+    ? `<div class="aviso">Quedan <strong>${eur(r.noAsignadoEUR)}</strong> sin asignar: los tokens son enteros y no llegan para uno más.
+       Había ${r.disponibles} proyectos que encajaban con tus criterios.</div>` : '';
+  out.innerHTML = sobra
+    + '<div class="sec-hdr"><h2>Resumen de la cuenta</h2></div>' + bloqueResumen(r,est)
+    + '<div class="sec-hdr"><h2>La cartera con reinversión: el poder del interés compuesto</h2></div>' + bloqueReinversion(r,est)
+    + '<div class="sec-hdr"><h2>Análisis de la cartera propuesta</h2></div>' + bloqueAnalisis(r.cProp)
+    + '<div class="sec-hdr"><h2>Resumen de activos — rentabilidades por estatus</h2></div>' + bloqueActivos(r,est)
+    + bloqueFichas(r,est);
+}
+
+document.getElementById('simular').addEventListener('click',()=>{
+  const o = leer();
+  pintar(simular(DATOS,o),o);
+});
+
+fetch('https://api.frankfurter.app/latest?from=EUR&to=USD')
+  .then(r=>r.json())
+  .then(d=>{
+    const v = d && d.rates && d.rates.USD;
+    if(!v) throw new Error('sin dato');
+    document.getElementById('fx').value = v;
+    document.getElementById('fxNota').textContent = 'Tipo del BCE de '+d.date+'. Puedes cambiarlo a mano.';
+  })
+  .catch(()=>{
+    document.getElementById('fxNota').textContent = 'No se pudo consultar el BCE. Se usa el tipo del máster (1,14535). Puedes cambiarlo a mano.';
+  });
+</script>
+</body>
+</html>
